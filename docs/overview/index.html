@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -40,10 +43,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-6a537fba8eaf0f87500e2e8a30aa56d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b540b6f04bd439ed7a1e576ece92db15.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-6a537fba8eaf0f87500e2e8a30aa56d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-93c44ee66bff2ff80ebdd854f6393dae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-1f6926c6df80bf10d40346647e3297be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1f6926c6df80bf10d40346647e3297be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-1f6926c6df80bf10d40346647e3297be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -179,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../CHANGELOG.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">CHANGELOG.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Changelog</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -201,15 +208,8 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#steps-to-follow-during-the-publication-life-cycle" id="toc-steps-to-follow-during-the-publication-life-cycle" class="nav-link active" data-scroll-target="#steps-to-follow-during-the-publication-life-cycle"><span class="header-section-number">1.0.1</span> Steps to follow during the publication life cycle</a></li>
-  <li><a href="#open-and-reproducible-practices" id="toc-open-and-reproducible-practices" class="nav-link" data-scroll-target="#open-and-reproducible-practices"><span class="header-section-number">1.0.2</span> Open and reproducible practices</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/dp-next/guide/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/dp-next/guide/edit/main/docs/overview/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/dp-next/guide/blob/main/docs/overview/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -233,59 +233,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="steps-to-follow-during-the-publication-life-cycle" class="level3" data-number="1.0.1">
-<h3 data-number="1.0.1" class="anchored" data-anchor-id="steps-to-follow-during-the-publication-life-cycle"><span class="header-section-number">1.0.1</span> Steps to follow during the publication life cycle</h3>
-<p>The requirements for preparing a DP-Next publication apply to both internal and external researchers and should follow these steps:</p>
-<ol type="1">
-<li><p>New projects should always begin with the steps in <a href="../getting-started/new-project.html" class="quarto-xref"><span>Chapter 4</span></a>.</p></li>
-<li><p>Protocol writing. It is expected that the first output from each publication will be an analysis protocol. Investigators should follow these steps:</p>
-<ul>
-<li>Draft a detailed analysis protocol in the publication’s GitHub repository that describes the following points:
-<ul>
-<li>The title</li>
-<li>Authors</li>
-<li>Background and hypothesis</li>
-<li>Description of the data that will be used specifically for this publication</li>
-<li>Description of the specific data analysis plan for this publication</li>
-</ul></li>
-<li>Once there is a solid version, the protocol should be published on an online repository such as Zenodo or OpenAIRE to obtain a Digital Object Identifier (DOI) and clearly establish a clear temporal sequence between definition of hypotheses/analytic approaches and analysis of data.</li>
-<li>If new versions of the protocol are generated as the project advances, updates should also be pushed to Zenodo / OpenAIRE. This can be set up automatically using the Seedcase template.</li>
-<li>A stable version of the protocol may also be published as a preprint on online preprint servers such as arXiv or medRxiv.</li>
-</ul></li>
-<li><p>Work on the data analysis. Depending on the data used, this work will take place on a local secure server or on Denmark Statistics Servers. Please follow the guides on the use of Git / GitHub for data analysis in these two environments, making sure that the analytical code is saved in the project’s GitHub repository.</p></li>
-<li><p>Preparation of a conference abstract, interim / preliminary results / progress reports / presentations / slides. As the project progresses, various interim results and materials are likely to be produced. As far as possible, these should also be managed as separate ‘chapters’ of the project’s GitHub repository.</p></li>
-<li><p>Preparation of the manuscript. This should also take place as a ‘chapter’ in the project’s GitHub repository and should be clearly linked to the annotated detailed analytical code that generated the tables, graphs and figures included in the manuscript. Stable versions of the manuscript should be published as a preprint on online preprint servers such as arXiv or medRxiv.</p></li>
-<li><p>Internal approval and first submission. When a substantial version of the manuscript / a conference abstract is ready for submission, the authors should request approval for submission from the Steering Committee by filing an ‘issue’ in the GitHub wp1-management project, with reference to the publication’s GitHub repository. This should be done at least two weeks before the intended submission date / deadline. The Steering Committee will provide their agreement / disagreement as soon as possible and within two weeks. If the Steering Committee does not respond within two weeks, this is regarded as agreement and the authors may proceed with submission. The Steering Committee may nominate some of its members to lead publication reviews/approvals on behalf of the full committee. The Steering Committee will only disagree with the submission of a paper or abstract at this stage if it is felt to be too premature, is seen as repetition of previously published work or if substantial parts of the process described in this guideline have not been followed (e.g.&nbsp;no GitHub repository, no approved synopsis, no protocol).</p></li>
-<li><p>Updates and acceptance. Throughout the project life cycle (also after the manuscript / conference abstract is submitted), the authors should keep the status table in the synopsis up to date to reflect (where relevant):</p>
-<ul>
-<li><p>Major milestones in analysis / writing / internal review, linked to major versions.</p></li>
-<li><p>Steering Committee approval</p></li>
-<li><p>First submission</p></li>
-<li><p>Rejections / resubmission</p></li>
-<li><p>Revisions / resubmission</p></li>
-<li><p>Acceptance</p></li>
-</ul></li>
-<li><p>Publication. The authors should send a copy of the full text of a publication and/or a link to the final materials to the Steering Committee and report/log the activity on the relevant academic output tracking platform.</p></li>
-</ol>
-<p>All publications should be accompanied by the following:</p>
-<ul>
-<li>A synopsis of the proposed publication, including a defined aim/hypothesis, general methodological approach, required data, expected timeline, and proposed author list. This synopsis is found partly in the project proposal issue as well as in the <code>dp-next.yaml</code> file within the project repository itself. See <a href="../getting-started/new-project.html" class="quarto-xref"><span>Chapter 4</span></a> for more details.</li>
-<li>A detailed analysis protocol, published on an online repository such as Zenodo or OpenAIRE to obtain a Digital Object Identifier (DOI) and clearly establish a clear temporal sequence between definition of hypotheses/analytic approaches and analysis of data.</li>
-<li>A publicly accessible repository on GitHub containing the detailed analytical code that generates the tables, graphs, and figures included in the manuscript, as well as the full text of the manuscript, abstracts submitted to conferences and slides/posters that present the work, the synopsis and the protocol.</li>
-<li>Preprints of substantial versions of the manuscript on online pre-print servers such as Zenodo, bioRxiv, arXiv, or medRxiv.</li>
-</ul>
-</section>
-<section id="open-and-reproducible-practices" class="level3" data-number="1.0.2">
-<h3 data-number="1.0.2" class="anchored" data-anchor-id="open-and-reproducible-practices"><span class="header-section-number">1.0.2</span> Open and reproducible practices</h3>
-<p>All publications/outputs should be published as Open Access publications, with a strong preference for:</p>
-<ul>
-<li>The Green Open Access format (meaning to publish as a pre-print in an open archive such as <a href="https://zenodo.org">Zenodo</a> or bioRxiv).</li>
-<li>Publication agreements that do not require the transfer of copyright to publishers.</li>
-<li>Publication under a Creative Commons CC-BY license.</li>
-</ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -714,7 +663,7 @@ ul.task-list li input[type="checkbox"] {
 </a>
   </li>  
 </ul>
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/dp-next/guide/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/dp-next/guide/edit/main/docs/overview/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/dp-next/guide/blob/main/docs/overview/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/dp-next/guide/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/dp-next/guide/edit/main/docs/overview/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li><li><a href="https://github.com/dp-next/guide/blob/main/docs/overview/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

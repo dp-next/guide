@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,16 +12,54 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -40,10 +78,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-6a537fba8eaf0f87500e2e8a30aa56d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b540b6f04bd439ed7a1e576ece92db15.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-6a537fba8eaf0f87500e2e8a30aa56d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-93c44ee66bff2ff80ebdd854f6393dae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-1f6926c6df80bf10d40346647e3297be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-1f6926c6df80bf10d40346647e3297be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-1f6926c6df80bf10d40346647e3297be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -182,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../CHANGELOG.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">CHANGELOG.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Changelog</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -258,7 +300,14 @@ Note
 <section id="configure-git" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="configure-git"><span class="header-section-number">5.1</span> Configure Git</h2>
 <p>The very first step is to configure your Git. You thankfully only need to do once (or after DST has reset your profile). If you haven’t already configured your Git, open a terminal (called Git Bash in DST) and type out these commands:</p>
-<p><code>bash {.filename="Terminal"} git config --global user.name "YOUR NAME" git config --global user.email "name@email.com" git config --global init.defaultBranch main</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"YOUR NAME"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"name@email.com"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> init.defaultBranch main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>Replacing the <code>YOUR NAME</code> and <code>name@email.com</code> with your actual details.</p>
 </section>
 <section id="the-folder-structure" class="level2" data-number="5.2">
@@ -305,40 +354,96 @@ Important
 <section id="creating-the-parent-folder" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="creating-the-parent-folder"><span class="header-section-number">5.3</span> Creating the “parent” folder</h2>
 <p>You need to first open a terminal in the right location and create the correct folder. To do that, open up the project’s <code>workdata/</code> folder using the File Explorer in the DST Windows desktop. The project folder should be at a location like <code>E:/workdata/7000000/</code> (the project ID is usually a seven-digit number starting with 7). When in this folder, right-click somewhere in the folder and select the menu option “Open in Git Bash” (or something similar). A terminal program should open up at this location. In the new terminal app, create the new research project folder (<code>wp2-analysis</code> from the example above):</p>
-<p><code>bash {.filename="Terminal"} mkdir wp2-analysis</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> wp2-analysis</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>The <code>mkdir</code> command means “make directory” (or folder). Next, you want to move your “working directory” (the folder location your terminal is in) into this newly created folder using the <code>cd</code> command (change directory):</p>
-<p><code>bash {.filename="Terminal"} cd wp2-analysis</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> wp2-analysis</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>You are now ready for the next steps.</p>
 </section>
 <section id="creating-a-git-remote-as-a-folder" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="creating-a-git-remote-as-a-folder"><span class="header-section-number">5.4</span> Creating a Git “remote” as a folder</h2>
 <p>To create the “remote” folder, first create the <code>wp2-analysis/</code> folder. Then, open a terminal into the <code>wp2-analysis/</code> folder and run the following command:</p>
-<p><code>bash {.filename="Terminal"} git init --bare remote</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init <span class="at">--bare</span> remote</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>This will then create the <code>remote/</code> folder with the necessary Git files and folders that will allow it to be treated as a Git remote repository (like with GitHub). This is the folder each collaborator will push and pull to (more on that later below).</p>
 </section>
 <section id="creating-the-first-local-repository" class="level2" data-number="5.5">
 <h2 data-number="5.5" class="anchored" data-anchor-id="creating-the-first-local-repository"><span class="header-section-number">5.5</span> Creating the first “local” repository</h2>
 <p>Next, one of the collaborators (e.g.&nbsp;<code>person-name-1</code>) needs to create their local repository, ideally using a standard structure as set up by the <a href="https://rostools.github.io/prodigenr/">prodigenr</a> package. To do this run the following R function while in the terminal:</p>
-<p><code>bash {.filename="Terminal"} Rscript -e 'prodigenr::setup_project("wp2-analysis")'</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> <span class="at">-e</span> <span class="st">'prodigenr::setup_project("wp2-analysis")'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>This will create a folder with the <code>.Rproj</code> file name as <code>wp2-analysis</code>. But since we want each subfolder to be the name of the collaborator, you’ll need to rename the folder to <code>person-name-1</code> (name or other identifier of the person doing these tasks, without spaces). You can use the <code>mv</code> command in the Git Bash terminal, which renames a file or folder to a new name using the pattern <code>mv OLD NEW</code>.</p>
-<p><code>bash {.filename="Terminal"} mv wp2-analysis person-name-1</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> wp2-analysis person-name-1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>Next, you’ll need to connect this local repository to the <code>remote/</code> folder. Before you do that, you’ll need to “move into” that new folder by using the “change directory” command <code>cd</code>.</p>
-<p><code>bash {.filename="Terminal"} cd person-name-1</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> person-name-1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>Next, you can add all the files in that directory into the Git history:</p>
-<p><code>bash {.filename="Terminal"} git add . git commit -m "start of project"</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"start of project"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>Now that this folder has files saved to the Git history, you can connect the repository to the <code>remote/</code> folder.</p>
-<p><code>bash {.filename="Terminal"} git remote add origin ../remote</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin ../remote</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>You’ll use the relative path <code>../remote</code> to mean “one folder up” (<code>../</code>) as you will always be keeping both the remote and “local” (collaborator) repositories within the same parent folder (e.g.&nbsp;<code>wp2-analysis/</code>).</p>
 <p>Next you’ll need to push the Git history to the remote, while also telling the project’s Git to use that remote whenever you use push and pull with the <code>-u</code> option:</p>
-<p><code>bash {.filename="Terminal"} git push -u origin main</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>You’re now ready to collaborate! <span class="emoji" data-emoji="tada">🎉</span></p>
 </section>
 <section id="creating-more-local-repositories" class="level2" data-number="5.6">
 <h2 data-number="5.6" class="anchored" data-anchor-id="creating-more-local-repositories"><span class="header-section-number">5.6</span> Creating more “local” repositories</h2>
 <p>Now that the “remote” folder has been officially set up, it’s easy to add another “local” repository for another collaborator (e.g.&nbsp;<code>person-name-2</code>). Replace <code>person-name-2</code> with the name (or other identifier) of the second collaborator (without spaces). This step should be done by the other collaborator (e.g.&nbsp;the person who’s name is <code>person-name-2</code>). You’ll need to open the terminal in the <code>wp2-analysis</code> folder. You can check if you are in the right folder by using the <code>pwd</code> command (print working directory).</p>
-<p><code>bash {.filename="Terminal"} pwd</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>And it should output: <code>E:/workdata/PROJECT-ID/wp2-analysis</code>. If you are <em>not</em> at that location, make sure to open the File Explorer, find that folder, and right-click somewhere to select “Open in Git Bash” in the menu. When you’re in the right folder, run this command:</p>
-<p><code>bash {.filename="Terminal"} git clone ./remote person-name-2</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone ./remote person-name-2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>This will create a new folder called <code>person-name-2/</code> with the same structure as the first collaborator’s local repository. It will also be connected to the same <code>remote/</code> folder for pushing and pulling changes. This collaborator can now open the project in RStudio, Positron, or any other editor they like.</p>
 </section>
 <section id="using-the-remote-to-collaborate" class="level2" data-number="5.7">
@@ -775,8 +880,8 @@ Important
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../CHANGELOG.html" class="pagination-link" aria-label="CHANGELOG.html">
-        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">CHANGELOG.html</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../CHANGELOG.html" class="pagination-link" aria-label="Changelog">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Changelog</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
