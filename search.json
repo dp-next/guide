@@ -205,34 +205,45 @@
   {
     "objectID": "CHANGELOG.html",
     "href": "CHANGELOG.html",
-    "title": "Appendix A — Changelog",
+    "title": "Changelog",
     "section": "",
-    "text": "A.1 0.1.1 - 2026-08-30\nSince we follow Conventional Commits, we’re able to automatically create formal “releases” of the website based on our commit messages. Releases in the context of websites are simply snapshots in time of the website content. We use Cocogitto to be able to automatically create these releases, which uses SemVar as the version numbering scheme, and git-cliff to generate the changelog based on the commit messages.\nBecause releases are created based on commit messages, a new release is created quite often—sometimes several times in a day. This also means that any individual release will not have many changes within it. Below is a list of the releases we’ve made so far, along with what was changed within each release.\nCommits from bots, like dependabot or pre-commit-ci, are not included in the changelog.",
+    "text": "0.2.0 - 2026-08-30\nSince we follow Conventional Commits, we’re able to automatically create formal “releases” of the website based on our commit messages. Releases in the context of websites are simply snapshots in time of the website content. We use Cocogitto to be able to automatically create these releases, which uses SemVar as the version numbering scheme, and git-cliff to generate the changelog based on the commit messages.\nBecause releases are created based on commit messages, a new release is created quite often—sometimes several times in a day. This also means that any individual release will not have many changes within it. Below is a list of the releases we’ve made so far, along with what was changed within each release.\nCommits from bots, like dependabot or pre-commit-ci, are not included in the changelog.",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Changelog</span>"
+      "Changelog"
     ]
   },
   {
     "objectID": "CHANGELOG.html#section",
     "href": "CHANGELOG.html#section",
-    "title": "Appendix A — Changelog",
+    "title": "Changelog",
     "section": "",
-    "text": "A.1.1 🐛 Fixes\n\nRemove . before filename in code chunks by @lwjohnst86 (116392c)\n\n\n\nA.1.2 👷 CI/CD\n\nFix malformed workflow by @lwjohnst86 (278fce3)",
+    "text": "✨ Features\n\nMove authorships section over from wp1-ros #4 by @lwjohnst86 (ce029c1)\n\n\n\n💄 Styling\n\nDon’t number appendices #1 by @lwjohnst86 (e876d30)",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Changelog</span>"
+      "Changelog"
     ]
   },
   {
     "objectID": "CHANGELOG.html#section-1",
     "href": "CHANGELOG.html#section-1",
-    "title": "Appendix A — Changelog",
-    "section": "A.2 [0.1.0] - 2026-08-30",
-    "text": "A.2 [0.1.0] - 2026-08-30\n\nA.2.1 ✨ Features\n\nAdd initial Quarto config file and index files by @lwjohnst86 (1b3dcea)\nMove over section on starting a project by @lwjohnst86 (e7c19e6)\nMove “roles” chapter into this guide by @lwjohnst86 (29b4021)\nMove and update the DST setup guide by @lwjohnst86 (d5e8640)\n\n\n\nA.2.2 🐛 Fixes\n\nAdd link to Turing Way website by @lwjohnst86 (a5f2e85)\n\n\n\nA.2.3 ♻️ Refactor\n\nRename to overview from general by @lwjohnst86 (1a71f31)\n\n\n\nA.2.4 📝 Documentation\n\nMinor edits to community health files by @lwjohnst86 (41f4afd)\n\n\n\nA.2.5 💄 Styling\n\nAdd DP-Next Quarto theme by @lwjohnst86 (fb45ae0)\n\n\n\nA.2.6 👩‍💻 Miscellaneous\n\nStart of guide repo by @lwjohnst86 (8feebcc)\nSwitch to use dp-next-theme in justfile by @lwjohnst86 (06fce32)\nUpdate and run pre-commit hooks by @lwjohnst86 (f937cf2)\nExclude _book/ and _extensions/ from TODO listing by @lwjohnst86 (ae8107a)\nIgnore Quarto *_files/ by @lwjohnst86 (102e2ed)\n\n\n\nA.2.7 ❤️ New contributors\n\n@github-actions[bot] started making automated contributions\n@lwjohnst86 made their first contribution",
+    "title": "Changelog",
+    "section": "0.1.1 - 2026-08-30",
+    "text": "0.1.1 - 2026-08-30\n\n🐛 Fixes\n\nRemove . before filename in code chunks by @lwjohnst86 (116392c)\n\n\n\n👷 CI/CD\n\nFix malformed workflow by @lwjohnst86 (278fce3)",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Changelog</span>"
+      "Changelog"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-2",
+    "href": "CHANGELOG.html#section-2",
+    "title": "Changelog",
+    "section": "0.1.0 - 2026-08-30",
+    "text": "0.1.0 - 2026-08-30\n\n✨ Features\n\nAdd initial Quarto config file and index files by @lwjohnst86 (1b3dcea)\nMove over section on starting a project by @lwjohnst86 (e7c19e6)\nMove “roles” chapter into this guide by @lwjohnst86 (29b4021)\nMove and update the DST setup guide by @lwjohnst86 (d5e8640)\n\n\n\n🐛 Fixes\n\nAdd link to Turing Way website by @lwjohnst86 (a5f2e85)\n\n\n\n♻️ Refactor\n\nRename to overview from general by @lwjohnst86 (1a71f31)\n\n\n\n📝 Documentation\n\nMinor edits to community health files by @lwjohnst86 (41f4afd)\n\n\n\n💄 Styling\n\nAdd DP-Next Quarto theme by @lwjohnst86 (fb45ae0)\n\n\n\n👩‍💻 Miscellaneous\n\nStart of guide repo by @lwjohnst86 (8feebcc)\nSwitch to use dp-next-theme in justfile by @lwjohnst86 (06fce32)\nUpdate and run pre-commit hooks by @lwjohnst86 (f937cf2)\nExclude _book/ and _extensions/ from TODO listing by @lwjohnst86 (ae8107a)\nIgnore Quarto *_files/ by @lwjohnst86 (102e2ed)\n\n\n\n❤️ New contributors\n\n@github-actions[bot] started making automated contributions\n@lwjohnst86 made their first contribution",
+    "crumbs": [
+      "Appendices",
+      "Changelog"
     ]
   },
   {
