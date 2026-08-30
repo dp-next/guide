@@ -8,11 +8,11 @@ with descriptions afterwards that outline the steps in more detail.
 
 ```{mermaid}
 %%| label: fig-new-project-steps
-%%| fig-cap: |
+%%| fig-cap: >-
 %%|   Steps to take for starting a project within DP-Next. The rounded boxes in
 %%|   orange are tasks you are responsible for doing. The rectangular ones in
 %%|   light blue are for the managers ("us") to do.
-%%| fig-alt: |
+%%| fig-alt: >-
 %%|   Boxes and arrows indicating the flow of tasks from creating an issue to
 %%|   filling in the 'dp-next.yaml' file. The boxes are colored according to
 %%|   whether they are the responsibility of the authors ("you") or the managers
