@@ -32,7 +32,7 @@ install-precommit:
 
 # Update (or add if not present) the Quarto seedcase-theme extension
 update-quarto-theme:
-  quarto update seedcase-project/seedcase-theme --no-prompt
+  quarto update dp-next/dp-next-theme --no-prompt
 
 # Check for spelling errors in files
 check-spelling:
