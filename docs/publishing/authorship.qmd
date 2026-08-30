@@ -1,0 +1,43 @@
+# Authorship {#sec-authorship}
+
+Authorship publications should reflect a substantial, direct contribution to the
+work presented in each paper. We aim to use the [Vancouver
+Guidelines](https://www.icmje.org/icmje-recommendations.pdf) as a base and
+expand on them to reflect nontraditional research contributions. Nontraditional
+research contributions are activities that contribute in a direct way to the
+creation of the publication, such as improving data quality, developing
+software, or improving analysis code.
+
+When you create the project proposal (as in @sec-new-project), you should have
+an approximate idea of who the authors are and their order in the list. As the
+project continues, though, this could naturally change. Anyone who has
+contributed meaningfully or substantially to research project should be given
+the chance to become coauthor.
+
+All potential coauthors should be involved early in the research project,
+ideally at the project proposal stage. In addition to the named authors, all
+papers need to include the group authorship of 'on behalf of the DP-Next
+investigators', linking to the current list of [DP-Next
+investigators](https://dp-next.github.io/who-we-are.html)
+
+Keep in mind that author lists and orders aren't fixed at the start and can be
+amended after project approval by consensus among the authors or by the Steering
+Committee if the factual contributions differ from those foreseen initially.
+Ultimately, the [Steering
+Committee](https://dp-next.github.io/who-we-are.html#sc) has the final authority
+to decide on and determine the author list of any given paper. If disagreements
+about authorship cannot be resolved by consensus within the author group, the
+Steering Committee will make the final decision.
+
+Regardless of named authors, you should make sure to include a detailed
+contributors list along with their described contributions as per the [CRediT
+roles](https://credit.niso.org). At the least, the contributors and CRediT roles
+should be kept updated in the `dp-next.yaml` file and ideally be mentioned
+somewhere in the paper or in the supplemental material. The Steering Committee
+will ensure that such a document is publicly accessible and up to date.
+
+Make sure to also include an acknowledgement to external parties such as
+funders, institutions, participants, and service providers in papers and other
+material you present or disseminate elsewhere. The Steering Committee will
+maintain an updated acknowledgement statement for the DP-Next project in the
+[template-project](https://dp-next.github.io/template-project).
