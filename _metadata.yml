@@ -1,0 +1,9 @@
+gh:
+  org: dp-next
+  repo: guide
+
+tagline: "A guide to reproducible and open scientific practices in the multi-center DP-Next project to do better research in less time and fewer resources"
+
+links:
+  github: "https://github.com/dp-next/guide"
+  site: "https://dp-next.github.io/guide"

@@ -1,0 +1,50 @@
+project:
+  type: book
+
+book:
+  title: "Guide to the research lifecycle in DP-Next"
+  site-url: "https://dp-next.github.io/guide/"
+  repo-url: "https://github.com/dp-next/guide"
+  author:
+    - name: "Luke W. Johnston"
+      affiliation: "Steno Diabetes Center Aarhus"
+      orcid: "0000-0003-4169-2616"
+  repo-branch: main
+  repo-actions: [issue, edit, source]
+  downloads: [pdf]
+  search:
+    location: navbar
+    type: textbox
+  navbar:
+    pinned: true
+  chapters:
+    - index.qmd
+    - part: "Overview"
+      chapters:
+      - docs/general/index.qmd
+    - part: "Lifecycle"
+      chapters:
+      - docs/getting-started/index.qmd
+  appendices:
+    - CHANGELOG.md
+    - CONTRIBUTING.md
+    - CODE_OF_CONDUCT.md
+  tools:
+    - icon: github
+      href: "https://github.com/dp-next/guide"
+      aria-label: "GitHub icon: Source repository"
+  page-footer:
+    center:
+      - text: "Licensed under CC BY 4.0"
+        href: "LICENSE.md"
+
+format:
+  dp-next-theme-html: default
+  typst:
+    brand: "_extensions/dp-next/dp-next-theme/_brand.yml"
+    papersize: a4
+    margin:
+      x: 2cm
+      y: 2cm
+
+

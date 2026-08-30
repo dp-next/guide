@@ -1,0 +1,90 @@
+# Welcome! {.unnumbered}
+
+::: {.content-visible when-format="html"}
+{{< include /includes/_badges.qmd >}}
+:::
+
+::: {.callout-note appearance="default"}
+This guide mostly follows the [diátaxis](https://diataxis.fr/how-to-guides/)
+"how-to guide" style, though not strictly. It is a living and constantly
+evolving guide that is regularly updated as we learn and refine how we work and
+develop data packages. We intend to continually update and release every update
+to the guide to Zenodo and as GitHub releases. We don't expect this guide to
+ever be considered "done".
+:::
+
+There are surprisingly few, practical resources and how-to guides for learning
+about and doing effective collaboration within research, especially in the
+context of open science and reproducibility. The few resources that do exist are
+more theoretical than the practice "how do I actually do it?" aspects.
+
+In particular, few research groups and institutions develop and curate their own
+guide on how they do things. This makes it very difficult to learn as a new (or
+established) researcher how others do things, so that we can draw inspiration
+from or build off of how others work and do research. Often these skills are
+gained through verbal knowledge sharing or from watching how peers or other
+group members work. This makes it difficult to apply any type of scientific
+reasoning, critical thinking, and analysis to these collaborative, open
+scientific, and reproducible practices.
+
+This guide is an attempt at documenting and sharing how we aspire to and aim to
+work within the DP-Next project.
+
+## Who you are
+
+We've written these documents with a few types of people in mind:
+
+- **DP-Next collaborators/group members**: These people are our primary audience
+  for this guide. If you work with us in DP-Next, these documents are designed
+  and developed with you in mind.
+- **Researchers not affiliated with DP-Next**: If you work in another
+  organization or group, we write these documents to share our practices with
+  you. You can use this either as a guide or as a reference to help you improve
+  your own work or to draw inspiration from for how you structure your research
+  and collaboration.
+- **Group or organisation leaders**: If you are a leader of a group or
+  institution, we write this guide to show how a group of researchers *could*
+  work together in more effective ways. You can use this guide to get
+  inspiration for how you can design your own group or institution to work
+  better together at producing open and reproducible research.
+
+## Contributing
+
+Check out our [contributing document](CONTRIBUTING.md) for information on how to
+contribute to this guide.
+
+::: content-hidden
+<!-- TODO: Unhide after having more contributors -->
+### Contributors
+
+{{< include /includes/_contributors.qmd >}}
+:::
+
+## Changes
+
+Check out our [changelog](CHANGELOG.md) for information on what has changed in
+each version of the guide. Previous versions can be found in the
+[releases](https://github.com/dp-next/guide/releases) page of the GitHub
+repository.
+
+::: content-hidden
+<!-- TODO: Uncomment after building the PDF and uploading as an artifact -->
+<!-- TODO: Add Zenodo link here once created -->
+The PDF version of the guide is available in the releases page, as well as the
+Zenodo archive.
+:::
+
+## How the website is made
+
+The website and PDF (download link on the top of the website's sidebar) are
+created using [Quarto](https://quarto.org) to write the material and create the
+book format. [GitHub](https://github.com/) hosts the [Git](https://git-scm.com/)
+repository of the material, while [GitHub
+Actions](https://github.com/features/actions) builds and releases the book with
+every change. [Netlify](https://www.netlify.com/) hosts the website and manages
+the domain. The source material is in the
+[`{{< meta gh.repo >}}`]({{< meta links.github >}}) GitHub repository.
+
+## Inspirations
+
+- [The Turing Way]()
