@@ -1,4 +1,4 @@
-# Contributing
+# Contributing {.unnumbered}
 
 ## :bug: Issues and bugs
 
