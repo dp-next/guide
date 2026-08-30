@@ -25,6 +25,7 @@ book:
     - part: "Lifecycle"
       chapters:
       - docs/getting-started/index.qmd
+      - docs/getting-started/new-project.qmd
   appendices:
     - CHANGELOG.md
     - CONTRIBUTING.md
