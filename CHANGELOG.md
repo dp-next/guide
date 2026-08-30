@@ -1,4 +1,8 @@
-# Changelog
+---
+toc-depth: 2
+---
+
+# Changelog {.unnumbered}
 
 Since we follow [Conventional
 Commits](https://decisions.seedcase-project.org/why-conventional-commits/),
@@ -19,6 +23,21 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.2.0](https://github.com/dp-next/guide/compare/0.1.1..0.2.0) - 2026-08-30
+
+### ✨ Features
+
+- Move authorships section over from `wp1-ros`
+  [#4](https://github.com/dp-next/guide/pull/4) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([ce029c1](https://github.com/dp-next/guide/commit/ce029c1209979649ee097333ca11e87e4421af64))
+
+### 💄 Styling
+
+- Don't number appendices [#1](https://github.com/dp-next/guide/pull/1) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([e876d30](https://github.com/dp-next/guide/commit/e876d3098b5338b73fb19f89d7daefaf9d7a4253))
+
 ## [0.1.1](https://github.com/dp-next/guide/compare/0.1.0..0.1.1) - 2026-08-30
 
 ### 🐛 Fixes
@@ -32,7 +51,7 @@ changelog.
 - Fix malformed workflow by [`@lwjohnst86`](https://github.com/lwjohnst86)
   ([278fce3](https://github.com/dp-next/guide/commit/278fce3f11c45eaa3b3f3be06b9620101ac417c8))
 
-## [0.1.0] - 2026-08-30
+## 0.1.0 - 2026-08-30
 
 ### ✨ Features
 
