@@ -18,7 +18,7 @@ The very first step is to configure your Git. You thankfully only need to do
 once (or after DST has reset your profile). If you haven't already configured
 your Git, open a terminal (called Git Bash in DST) and type out these commands:
 
-```bash {.filename="Terminal"}
+```bash {filename="Terminal"}
 git config --global user.name "YOUR NAME"
 git config --global user.email "name@email.com"
 git config --global init.defaultBranch main
@@ -91,7 +91,7 @@ select the menu option "Open in Git Bash" (or something similar). A terminal
 program should open up at this location. In the new terminal app, create the new
 research project folder (`wp2-analysis` from the example above):
 
-```bash {.filename="Terminal"}
+```bash {filename="Terminal"}
 mkdir wp2-analysis
 ```
 
@@ -99,7 +99,7 @@ The `mkdir` command means "make directory" (or folder). Next, you want to move
 your "working directory" (the folder location your terminal is in) into this
 newly created folder using the `cd` command (change directory):
 
-```bash {.filename="Terminal"}
+```bash {filename="Terminal"}
 cd wp2-analysis
 ```
 
@@ -110,7 +110,7 @@ You are now ready for the next steps.
 To create the "remote" folder, first create the `wp2-analysis/` folder. Then,
 open a terminal into the `wp2-analysis/` folder and run the following command:
 
-```bash {.filename="Terminal"}
+```bash {filename="Terminal"}
 git init --bare remote
 ```
 
@@ -126,7 +126,7 @@ local repository, ideally using a standard structure as set up by the
 [prodigenr](https://rostools.github.io/prodigenr/) package. To do this run the
 following R function while in the terminal:
 
-```bash {.filename="Terminal"}
+```bash {filename="Terminal"}
 Rscript -e 'prodigenr::setup_project("wp2-analysis")'
 ```
 
@@ -137,7 +137,7 @@ doing these tasks, without spaces). You can use the `mv` command in the Git Bash
 terminal, which renames a file or folder to a new name using the pattern
 `mv OLD NEW`.
 
-```bash {.filename="Terminal"}
+```bash {filename="Terminal"}
 mv wp2-analysis person-name-1
 ```
 
@@ -145,13 +145,13 @@ Next, you'll need to connect this local repository to the `remote/` folder.
 Before you do that, you'll need to "move into" that new folder by using the
 "change directory" command `cd`.
 
-```bash {.filename="Terminal"}
+```bash {filename="Terminal"}
 cd person-name-1
 ```
 
 Next, you can add all the files in that directory into the Git history:
 
-```bash {.filename="Terminal"}
+```bash {filename="Terminal"}
 git add .
 git commit -m "start of project"
 ```
@@ -159,7 +159,7 @@ git commit -m "start of project"
 Now that this folder has files saved to the Git history, you can connect the
 repository to the `remote/` folder.
 
-```bash {.filename="Terminal"}
+```bash {filename="Terminal"}
 git remote add origin ../remote
 ```
 
@@ -171,7 +171,7 @@ Next you'll need to push the Git history to the remote, while also telling the
 project's Git to use that remote whenever you use push and pull with the `-u`
 option:
 
-```bash {.filename="Terminal"}
+```bash {filename="Terminal"}
 git push -u origin main
 ```
 
@@ -187,7 +187,7 @@ collaborator (e.g. the person who's name is `person-name-2`). You'll need to
 open the terminal in the `wp2-analysis` folder. You can check if you are in the
 right folder by using the `pwd` command (print working directory).
 
-```bash {.filename="Terminal"}
+```bash {filename="Terminal"}
 pwd
 ```
 
@@ -196,7 +196,7 @@ that location, make sure to open the File Explorer, find that folder, and
 right-click somewhere to select "Open in Git Bash" in the menu. When you're in
 the right folder, run this command:
 
-```bash {.filename="Terminal"}
+```bash {filename="Terminal"}
 git clone ./remote person-name-2
 ```
 
