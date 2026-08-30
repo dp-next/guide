@@ -87,4 +87,4 @@ the domain. The source material is in the
 
 ## Inspirations
 
-- [The Turing Way]()
+- [The Turing Way](https://book.the-turing-way.org)
