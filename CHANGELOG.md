@@ -19,6 +19,19 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.1.1](https://github.com/dp-next/guide/compare/0.1.0..0.1.1) - 2026-08-30
+
+### 🐛 Fixes
+
+- Remove `.` before `filename` in code chunks by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([116392c](https://github.com/dp-next/guide/commit/116392c0157e444a79a7198c34a061440a6dc688))
+
+### 👷 CI/CD
+
+- Fix malformed workflow by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([278fce3](https://github.com/dp-next/guide/commit/278fce3f11c45eaa3b3f3be06b9620101ac417c8))
+
 ## [0.1.0] - 2026-08-30
 
 ### ✨ Features
@@ -76,5 +89,7 @@ changelog.
   ([102e2ed](https://github.com/dp-next/guide/commit/102e2ed1d5ce2231e31c0bd94a7faf4b63cee31e))
 
 ### ❤️ New contributors
+
+- `@github-actions[bot]` started making automated contributions
 
 - [`@lwjohnst86`](https://github.com/lwjohnst86) made their first contribution
