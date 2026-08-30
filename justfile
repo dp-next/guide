@@ -19,7 +19,8 @@ list-todos:
     --exclude-dir=.git \
     --exclude-dir=*_cache \
     --exclude-dir=_temp \
-    --exclude-dir=_site \
+    --exclude-dir=_book \
+    --exclude-dir=_extensions \
     --exclude=justfile \
     --exclude=copier.yaml \
     "TODO" .
