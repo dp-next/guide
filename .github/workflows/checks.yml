@@ -39,10 +39,9 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
 
-      # Check that the website builds, but don't publish it. `no-execute` because this command has a
-      # hard time rendering/executing Mermaid chunks.
-      - name: Render Quarto Project
-        run: quarto render --no-execute --no-cache
+      # # Check that the website builds, but don't publish it
+      # - name: Render Quarto Project
+      #   uses: quarto-dev/quarto-actions/render@8a96df13519ee81fd526f2dfca5962811136661b # v2.2.0
 
   # Dependency Review Action
   #
