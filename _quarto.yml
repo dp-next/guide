@@ -21,7 +21,7 @@ book:
     - index.qmd
     - part: "Overview"
       chapters:
-      - docs/general/index.qmd
+      - docs/overview/index.qmd
     - part: "Lifecycle"
       chapters:
       - docs/getting-started/index.qmd
