@@ -42,7 +42,7 @@ jobs:
       # Check that the website builds, but don't publish it. `no-execute` because this command has a
       # hard time rendering/executing Mermaid chunks.
       - name: Render Quarto Project
-        run: quarto render --no-execute
+        run: quarto render --no-execute --no-cache
 
   # Dependency Review Action
   #
