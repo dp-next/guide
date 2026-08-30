@@ -32,7 +32,7 @@ projects done within DP-Next.
 > Seedcase template :tada:
 >
 > We integrate and make heavy use of the work done in the [Seedcase
-> Project](https://seedcase-project.org).
+> Project](https://seedcase-project.org) within this guide.
 
 ## Contributing
 
