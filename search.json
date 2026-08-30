@@ -192,11 +192,22 @@
     ]
   },
   {
+    "objectID": "docs/publishing/authorship.html",
+    "href": "docs/publishing/authorship.html",
+    "title": "6  Authorship",
+    "section": "",
+    "text": "Authorship publications should reflect a substantial, direct contribution to the work presented in each paper. We aim to use the Vancouver Guidelines as a base and expand on them to reflect nontraditional research contributions. Nontraditional research contributions are activities that contribute in a direct way to the creation of the publication, such as improving data quality, developing software, or improving analysis code.\nWhen you create the project proposal (as in Chapter 4), you should have an approximate idea of who the authors are and their order in the list. As the project continues, though, this could naturally change. Anyone who has contributed meaningfully or substantially to research project should be given the chance to become coauthor.\nAll potential coauthors should be involved early in the research project, ideally at the project proposal stage. In addition to the named authors, all papers need to include the group authorship of ‘on behalf of the DP-Next investigators’, linking to the current list of DP-Next investigators\nKeep in mind that author lists and orders aren’t fixed at the start and can be amended after project approval by consensus among the authors or by the Steering Committee if the factual contributions differ from those foreseen initially. Ultimately, the Steering Committee has the final authority to decide on and determine the author list of any given paper. If disagreements about authorship cannot be resolved by consensus within the author group, the Steering Committee will make the final decision.\nRegardless of named authors, you should make sure to include a detailed contributors list along with their described contributions as per the CRediT roles. At the least, the contributors and CRediT roles should be kept updated in the dp-next.yaml file and ideally be mentioned somewhere in the paper or in the supplemental material. The Steering Committee will ensure that such a document is publicly accessible and up to date.\nMake sure to also include an acknowledgement to external parties such as funders, institutions, participants, and service providers in papers and other material you present or disseminate elsewhere. The Steering Committee will maintain an updated acknowledgement statement for the DP-Next project in the template-project.",
+    "crumbs": [
+      "Lifecycle",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Authorship</span>"
+    ]
+  },
+  {
     "objectID": "CHANGELOG.html",
     "href": "CHANGELOG.html",
     "title": "Appendix A — Changelog",
     "section": "",
-    "text": "A.1 [0.1.0] - 2026-08-30\nSince we follow Conventional Commits, we’re able to automatically create formal “releases” of the website based on our commit messages. Releases in the context of websites are simply snapshots in time of the website content. We use Cocogitto to be able to automatically create these releases, which uses SemVar as the version numbering scheme, and git-cliff to generate the changelog based on the commit messages.\nBecause releases are created based on commit messages, a new release is created quite often—sometimes several times in a day. This also means that any individual release will not have many changes within it. Below is a list of the releases we’ve made so far, along with what was changed within each release.\nCommits from bots, like dependabot or pre-commit-ci, are not included in the changelog.",
+    "text": "A.1 0.1.1 - 2026-08-30\nSince we follow Conventional Commits, we’re able to automatically create formal “releases” of the website based on our commit messages. Releases in the context of websites are simply snapshots in time of the website content. We use Cocogitto to be able to automatically create these releases, which uses SemVar as the version numbering scheme, and git-cliff to generate the changelog based on the commit messages.\nBecause releases are created based on commit messages, a new release is created quite often—sometimes several times in a day. This also means that any individual release will not have many changes within it. Below is a list of the releases we’ve made so far, along with what was changed within each release.\nCommits from bots, like dependabot or pre-commit-ci, are not included in the changelog.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Changelog</span>"
@@ -207,7 +218,18 @@
     "href": "CHANGELOG.html#section",
     "title": "Appendix A — Changelog",
     "section": "",
-    "text": "A.1.1 ✨ Features\n\nAdd initial Quarto config file and index files by @lwjohnst86 (1b3dcea)\nMove over section on starting a project by @lwjohnst86 (e7c19e6)\nMove “roles” chapter into this guide by @lwjohnst86 (29b4021)\nMove and update the DST setup guide by @lwjohnst86 (d5e8640)\n\n\n\nA.1.2 🐛 Fixes\n\nAdd link to Turing Way website by @lwjohnst86 (a5f2e85)\n\n\n\nA.1.3 ♻️ Refactor\n\nRename to overview from general by @lwjohnst86 (1a71f31)\n\n\n\nA.1.4 📝 Documentation\n\nMinor edits to community health files by @lwjohnst86 (41f4afd)\n\n\n\nA.1.5 💄 Styling\n\nAdd DP-Next Quarto theme by @lwjohnst86 (fb45ae0)\n\n\n\nA.1.6 👩‍💻 Miscellaneous\n\nStart of guide repo by @lwjohnst86 (8feebcc)\nSwitch to use dp-next-theme in justfile by @lwjohnst86 (06fce32)\nUpdate and run pre-commit hooks by @lwjohnst86 (f937cf2)\nExclude _book/ and _extensions/ from TODO listing by @lwjohnst86 (ae8107a)\nIgnore Quarto *_files/ by @lwjohnst86 (102e2ed)\n\n\n\nA.1.7 ❤️ New contributors\n\n@lwjohnst86 made their first contribution",
+    "text": "A.1.1 🐛 Fixes\n\nRemove . before filename in code chunks by @lwjohnst86 (116392c)\n\n\n\nA.1.2 👷 CI/CD\n\nFix malformed workflow by @lwjohnst86 (278fce3)",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Changelog</span>"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-1",
+    "href": "CHANGELOG.html#section-1",
+    "title": "Appendix A — Changelog",
+    "section": "A.2 [0.1.0] - 2026-08-30",
+    "text": "A.2 [0.1.0] - 2026-08-30\n\nA.2.1 ✨ Features\n\nAdd initial Quarto config file and index files by @lwjohnst86 (1b3dcea)\nMove over section on starting a project by @lwjohnst86 (e7c19e6)\nMove “roles” chapter into this guide by @lwjohnst86 (29b4021)\nMove and update the DST setup guide by @lwjohnst86 (d5e8640)\n\n\n\nA.2.2 🐛 Fixes\n\nAdd link to Turing Way website by @lwjohnst86 (a5f2e85)\n\n\n\nA.2.3 ♻️ Refactor\n\nRename to overview from general by @lwjohnst86 (1a71f31)\n\n\n\nA.2.4 📝 Documentation\n\nMinor edits to community health files by @lwjohnst86 (41f4afd)\n\n\n\nA.2.5 💄 Styling\n\nAdd DP-Next Quarto theme by @lwjohnst86 (fb45ae0)\n\n\n\nA.2.6 👩‍💻 Miscellaneous\n\nStart of guide repo by @lwjohnst86 (8feebcc)\nSwitch to use dp-next-theme in justfile by @lwjohnst86 (06fce32)\nUpdate and run pre-commit hooks by @lwjohnst86 (f937cf2)\nExclude _book/ and _extensions/ from TODO listing by @lwjohnst86 (ae8107a)\nIgnore Quarto *_files/ by @lwjohnst86 (102e2ed)\n\n\n\nA.2.7 ❤️ New contributors\n\n@github-actions[bot] started making automated contributions\n@lwjohnst86 made their first contribution",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>A</span>  <span class='chapter-title'>Changelog</span>"
@@ -216,45 +238,45 @@
   {
     "objectID": "CONTRIBUTING.html",
     "href": "CONTRIBUTING.html",
-    "title": "Appendix B — Contributing",
+    "title": "Contributing",
     "section": "",
-    "text": "B.1 🐛 Issues and bugs\nThe easiest way to contribute is to report issues or bugs that you might find while reading through the website. You can do this by creating a new issue on our GitHub repository.",
+    "text": "🐛 Issues and bugs\nThe easiest way to contribute is to report issues or bugs that you might find while reading through the website. You can do this by creating a new issue on our GitHub repository.",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Contributing</span>"
+      "Contributing"
     ]
   },
   {
     "objectID": "CONTRIBUTING.html#adding-or-modifying-content",
     "href": "CONTRIBUTING.html#adding-or-modifying-content",
-    "title": "Appendix B — Contributing",
-    "section": "B.2 ✏️ Adding or modifying content",
-    "text": "B.2 ✏️ Adding or modifying content\nIf you would like to contribute content, please check out our guidebook for more specific details on how we work and develop. It is a regularly evolving document, so is at various states of completion.\nTo contribute to guide, you first need to install uv and justfile. We use uv and justfile to manage our project, such as to run checks and test the template. Both the uv and justfile websites have a more detailed guide on using uv, but below are some simple instructions to get you started.\nIt’s easiest to first install uv and then install justfile with uv. Once you’ve installed uv, install justfile by running:\nuv tool install rust-just\nWe keep all our development workflows in the justfile, so you can explore it to see what commands are available. To see a list of commands available, run:\njust\nAs you contribute, make sure your changes will pass our tests by opening a terminal so that the working directory is the root of this project’s repository and running:\njust run-all\nWhen committing changes, please try to follow Conventional Commits as Git messages. Using this convention allows us to be able to automatically create a release based on the commit message by using Cocogitto. If you don’t use Conventional Commits when making a commit, we will revise the pull request title to follow that format. That’s because we squash merge when merging pull requests, so all other commits in the pull request will be squashed into one commit.",
+    "title": "Contributing",
+    "section": "✏️ Adding or modifying content",
+    "text": "✏️ Adding or modifying content\nIf you would like to contribute content, please check out our guidebook for more specific details on how we work and develop. It is a regularly evolving document, so is at various states of completion.\nTo contribute to guide, you first need to install uv and justfile. We use uv and justfile to manage our project, such as to run checks and test the template. Both the uv and justfile websites have a more detailed guide on using uv, but below are some simple instructions to get you started.\nIt’s easiest to first install uv and then install justfile with uv. Once you’ve installed uv, install justfile by running:\nuv tool install rust-just\nWe keep all our development workflows in the justfile, so you can explore it to see what commands are available. To see a list of commands available, run:\njust\nAs you contribute, make sure your changes will pass our tests by opening a terminal so that the working directory is the root of this project’s repository and running:\njust run-all\nWhen committing changes, please try to follow Conventional Commits as Git messages. Using this convention allows us to be able to automatically create a release based on the commit message by using Cocogitto. If you don’t use Conventional Commits when making a commit, we will revise the pull request title to follow that format. That’s because we squash merge when merging pull requests, so all other commits in the pull request will be squashed into one commit.",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Contributing</span>"
+      "Contributing"
     ]
   },
   {
     "objectID": "CONTRIBUTING.html#explanation-of-files-and-folders",
     "href": "CONTRIBUTING.html#explanation-of-files-and-folders",
-    "title": "Appendix B — Contributing",
-    "section": "B.3 📁 Explanation of files and folders",
-    "text": "B.3 📁 Explanation of files and folders\nThis is a description of some of the files in this repository.\n\n.copier-answers.yml: Contains the answers you gave when copying the project from the template. You should not modify this file directly.\n.github/: Contains GitHub-specific files, such as issue and pull request templates, workflows, dependabot configuration, pull request templates, and a CODEOWNERS file.\n_quarto.yml: Quarto configuration file for the website, including settings for the website, such as the theme, navigation, and other options.\n_metadata.yml: Quarto metadata file for the website, including information about the project, such as the titles and GitHub names.\n.gitignore: This ignore file tells Git which files to not track. Unless you know what you are doing, it’s best to not touch this file.\n.pre-commit-config.yaml: Pre-commit configuration file for managing and running checks before each commit.\n.config/: Contains configuration files for various tools used in the project, such as:\n\ntypos.toml: typos spell checker configuration file.\nrumdl.toml and panache.toml: rumdl and Panache configuration file for formatting Markdown files in the project.\ncog.toml: Cocogitto configuration file for managing versions.\ncliff.toml: git-cliff configuration file for creating the changelog.\n\n.editorconfig: Editor configuration file for EditorConfig to maintain consistent coding styles across different editors and IDEs.\n.zenodo.json: Structured citation metadata for your project when archived on Zenodo. This is used to add the metadata to Zenodo when a GitHub release has been uploaded to Zenodo.\njustfile: just configuration file for scripting project tasks.\nCHANGELOG.md: Changelog file for tracking changes in the project.\nCONTRIBUTING.md: Guidelines for contributing to the project.",
+    "title": "Contributing",
+    "section": "📁 Explanation of files and folders",
+    "text": "📁 Explanation of files and folders\nThis is a description of some of the files in this repository.\n\n.copier-answers.yml: Contains the answers you gave when copying the project from the template. You should not modify this file directly.\n.github/: Contains GitHub-specific files, such as issue and pull request templates, workflows, dependabot configuration, pull request templates, and a CODEOWNERS file.\n_quarto.yml: Quarto configuration file for the website, including settings for the website, such as the theme, navigation, and other options.\n_metadata.yml: Quarto metadata file for the website, including information about the project, such as the titles and GitHub names.\n.gitignore: This ignore file tells Git which files to not track. Unless you know what you are doing, it’s best to not touch this file.\n.pre-commit-config.yaml: Pre-commit configuration file for managing and running checks before each commit.\n.config/: Contains configuration files for various tools used in the project, such as:\n\ntypos.toml: typos spell checker configuration file.\nrumdl.toml and panache.toml: rumdl and Panache configuration file for formatting Markdown files in the project.\ncog.toml: Cocogitto configuration file for managing versions.\ncliff.toml: git-cliff configuration file for creating the changelog.\n\n.editorconfig: Editor configuration file for EditorConfig to maintain consistent coding styles across different editors and IDEs.\n.zenodo.json: Structured citation metadata for your project when archived on Zenodo. This is used to add the metadata to Zenodo when a GitHub release has been uploaded to Zenodo.\njustfile: just configuration file for scripting project tasks.\nCHANGELOG.md: Changelog file for tracking changes in the project.\nCONTRIBUTING.md: Guidelines for contributing to the project.",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Contributing</span>"
+      "Contributing"
     ]
   },
   {
     "objectID": "CODE_OF_CONDUCT.html",
     "href": "CODE_OF_CONDUCT.html",
-    "title": "Appendix C — Contributor Code of Conduct",
+    "title": "Contributor Code of Conduct",
     "section": "",
     "text": "As contributors and maintainers of this project, we pledge to respect all people who contribute through reporting issues, posting suggestions, updating any material, submitting pull requests, and other activities.\nWe are committed to making participation in this project a harassment-free experience for everyone, regardless of level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion.\nExamples of unacceptable behavior by participants include the use of sexual language or imagery, derogatory comments or personal attacks, trolling, public or private harassment, insults, or other unprofessional conduct.\nProject maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct. Project maintainers who do not follow the Code of Conduct may be removed from the project team.\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by opening an issue or contacting one or more of the project maintainers.\nThis Code of Conduct is adapted from the Contributor Covenant (https://www.contributor-covenant.org), version 1.0.0, available at https://www.contributor-covenant.org/version/1/0/0/",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Contributor Code of Conduct</span>"
+      "Contributor Code of Conduct"
     ]
   },
   {
