@@ -1,4 +1,4 @@
-# Contributor Code of Conduct
+# Contributor Code of Conduct {.unnumbered}
 
 As contributors and maintainers of this project, we pledge to respect all people
 who contribute through reporting issues, posting suggestions, updating any

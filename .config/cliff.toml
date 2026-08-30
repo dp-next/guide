@@ -9,7 +9,11 @@ repo = "guide"
 [changelog]
 # A Tera template to be rendered for each release in the changelog.
 header = """
-# Changelog
+---
+toc-depth: 2
+---
+
+# Changelog {.unnumbered}
 
 Since we follow [Conventional
 Commits](https://decisions.seedcase-project.org/why-conventional-commits/),
@@ -57,7 +61,7 @@ body = """
         ## [{{ version | trim_start_matches(pat="v") }}]\
           ({{ self::remote_url() }}/compare/{{ previous.version }}..{{ version }}) - {{ timestamp | date(format="%Y-%m-%d") }}
     {% else %}
-        ## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
+        ## {{ version | trim_start_matches(pat="v") }} - {{ timestamp | date(format="%Y-%m-%d") }}
     {% endif %}
 {% else %}
     ## [unreleased]
