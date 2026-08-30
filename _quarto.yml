@@ -27,6 +27,7 @@ book:
       chapters:
       - docs/getting-started/index.qmd
       - docs/getting-started/new-project.qmd
+      - docs/getting-started/dst.qmd
   appendices:
     - CHANGELOG.md
     - CONTRIBUTING.md

@@ -1,0 +1,242 @@
+# Denmark Statistics {#sec-dst}
+
+Working on the Denmark Statistics (DST) servers brings with it unique challenges
+when it comes to collaborating together. This page describes how we've set it up
+to effectively collaborate on the DST servers.
+
+::: callout-note
+We show the steps to take using the terminal. Why? Because a lot of power and
+effectiveness comes from using the terminal and some steps can only be done in
+the terminal. It is also just easier to show a series of commands to run in the
+terminal rather describe how to do it with R, which requires more steps to take
+(e.g. opening up RStudio and finding the right working directory).
+:::
+
+## Configure Git
+
+The very first step is to configure your Git. You thankfully only need to do
+once (or after DST has reset your profile). If you haven't already configured
+your Git, open a terminal (called Git Bash in DST) and type out these commands:
+
+```bash {.filename="Terminal"}
+git config --global user.name "YOUR NAME"
+git config --global user.email "name@email.com"
+git config --global init.defaultBranch main
+```
+
+Replacing the `YOUR NAME` and `name@email.com` with your actual details.
+
+## The folder structure
+
+<!-- TODO: Link to design for "our design" -->
+
+Before setting up this folder structure, the first thing to decide is what the
+"product"/output will be and what its name (or abbreviation) will be. The reason
+for this, as per our design principles, is that we want to structure work around
+products and around teams (or groups), rather than individual people. So a
+folder structure should reflect how to work on the product as a group.
+
+We'll use an example of a product called `wp2-analysis` that will be done within
+DST. There are two people working on this product (for now) called
+`person-name-1` and `person-name-2`. The folder structure will look like this
+(don't create it yet!):
+
+```text
+workdata/<project-id>/
+└── wp2-analysis/
+    ├── remote/ # Contains only Git specific folders
+    ├── person-name-1/
+    │   ├── .git/
+    │   ├── data/
+    │   ├── docs/
+    │   ├── R/
+    │   ├── wp2-analysis.Rproj
+    │   ├── DESCRIPTION
+    │   ├── _targets.R
+    │   └── README.md
+    └── person-name-2/
+        ├── .git/
+        ├── data/
+        ├── docs/
+        ├── R/
+        ├── wp2-analysis.Rproj
+        ├── DESCRIPTION
+        ├── _targets.R
+        └── README.md
+```
+
+The `remote/` folder is a (bare) Git repository, meaning that the only files and
+folders found within it are Git specific folders and files, such as `branches/`,
+`hooks/`, `objects/`, `refs/`, `config`, `description`, and `HEAD`. The other
+folders (for each collaborator) are the "local" repositories that have the
+standard structure for data analysis projects. In this case, the "remote" folder
+is a bit like a GitHub repository, while each collaborator's "local" repository
+is like their own local repository of the GitHub (remote) repository.
+
+::: callout-important
+We'll describe the steps later on, but an important note is that each individual
+person will need to create their own folder. That's because servers like DST
+assigns the "owner" of the folder to the user who created it, so you may
+encounter issues if someone else made the folder for you.
+:::
+
+## Creating the "parent" folder
+
+You need to first open a terminal in the right location and create the correct
+folder. To do that, open up the project's `workdata/` folder using the File
+Explorer in the DST Windows desktop. The project folder should be at a location
+like `E:/workdata/7000000/` (the project ID is usually a seven-digit number
+starting with 7). When in this folder, right-click somewhere in the folder and
+select the menu option "Open in Git Bash" (or something similar). A terminal
+program should open up at this location. In the new terminal app, create the new
+research project folder (`wp2-analysis` from the example above):
+
+```bash {.filename="Terminal"}
+mkdir wp2-analysis
+```
+
+The `mkdir` command means "make directory" (or folder). Next, you want to move
+your "working directory" (the folder location your terminal is in) into this
+newly created folder using the `cd` command (change directory):
+
+```bash {.filename="Terminal"}
+cd wp2-analysis
+```
+
+You are now ready for the next steps.
+
+## Creating a Git "remote" as a folder
+
+To create the "remote" folder, first create the `wp2-analysis/` folder. Then,
+open a terminal into the `wp2-analysis/` folder and run the following command:
+
+```bash {.filename="Terminal"}
+git init --bare remote
+```
+
+This will then create the `remote/` folder with the necessary Git files and
+folders that will allow it to be treated as a Git remote repository (like with
+GitHub). This is the folder each collaborator will push and pull to (more on
+that later below).
+
+## Creating the first "local" repository
+
+Next, one of the collaborators (e.g. `person-name-1`) needs to create their
+local repository, ideally using a standard structure as set up by the
+[prodigenr](https://rostools.github.io/prodigenr/) package. To do this run the
+following R function while in the terminal:
+
+```bash {.filename="Terminal"}
+Rscript -e 'prodigenr::setup_project("wp2-analysis")'
+```
+
+This will create a folder with the `.Rproj` file name as `wp2-analysis`. But
+since we want each subfolder to be the name of the collaborator, you'll need to
+rename the folder to `person-name-1` (name or other identifier of the person
+doing these tasks, without spaces). You can use the `mv` command in the Git Bash
+terminal, which renames a file or folder to a new name using the pattern
+`mv OLD NEW`.
+
+```bash {.filename="Terminal"}
+mv wp2-analysis person-name-1
+```
+
+Next, you'll need to connect this local repository to the `remote/` folder.
+Before you do that, you'll need to "move into" that new folder by using the
+"change directory" command `cd`.
+
+```bash {.filename="Terminal"}
+cd person-name-1
+```
+
+Next, you can add all the files in that directory into the Git history:
+
+```bash {.filename="Terminal"}
+git add .
+git commit -m "start of project"
+```
+
+Now that this folder has files saved to the Git history, you can connect the
+repository to the `remote/` folder.
+
+```bash {.filename="Terminal"}
+git remote add origin ../remote
+```
+
+You'll use the relative path `../remote` to mean "one folder up" (`../`) as you
+will always be keeping both the remote and "local" (collaborator) repositories
+within the same parent folder (e.g. `wp2-analysis/`).
+
+Next you'll need to push the Git history to the remote, while also telling the
+project's Git to use that remote whenever you use push and pull with the `-u`
+option:
+
+```bash {.filename="Terminal"}
+git push -u origin main
+```
+
+You're now ready to collaborate! :tada:
+
+## Creating more "local" repositories
+
+Now that the "remote" folder has been officially set up, it's easy to add
+another "local" repository for another collaborator (e.g. `person-name-2`).
+Replace `person-name-2` with the name (or other identifier) of the second
+collaborator (without spaces). This step should be done by the other
+collaborator (e.g. the person who's name is `person-name-2`). You'll need to
+open the terminal in the `wp2-analysis` folder. You can check if you are in the
+right folder by using the `pwd` command (print working directory).
+
+```bash {.filename="Terminal"}
+pwd
+```
+
+And it should output: `E:/workdata/PROJECT-ID/wp2-analysis`. If you are *not* at
+that location, make sure to open the File Explorer, find that folder, and
+right-click somewhere to select "Open in Git Bash" in the menu. When you're in
+the right folder, run this command:
+
+```bash {.filename="Terminal"}
+git clone ./remote person-name-2
+```
+
+This will create a new folder called `person-name-2/` with the same structure as
+the first collaborator's local repository. It will also be connected to the same
+`remote/` folder for pushing and pulling changes. This collaborator can now open
+the project in RStudio, Positron, or any other editor they like.
+
+## Using the "remote" to collaborate
+
+Now that you have the remote and multiple local folders for each collaborator,
+you can start collaborating together! Whenever either collaborator makes changes
+to their local repository, regularly "push" and "pull" to the remote (via
+RStudio's interface or via the terminal) so that the remote is always up to
+date. This can be visually represented as follows:
+
+```{mermaid}
+flowchart TB
+    A["'person-name-1/'<br>repository"] -->|Push| B["'remote/'<br>repository"]
+    B -->|Pull| A
+    B -->|Pull| C["'person-name-2/'<br>repository"]
+    C -->|Push| B
+```
+
+This way, both collaborators can work on their own local repositories, but they
+can easily share their changes with each other by pushing and pulling to the
+remote repository. It also means that any collaborator can contribute to the
+product repository without impacting the work of other collaborators. This
+allows for effective collaboration while working on the DST servers, even
+without access to external platforms like GitHub.
+
+There will of course be some issues that will come up, especially merge
+conflicts. If each collaborator is pushing and pulling to the `main` (could also
+be called `master`) branch, then you will likely encounter merge conflicts. This
+isn't necessarily a bad thing, as you can always resolve them. And it's also
+fairly easy to avoid if you communicate with each other and coordinate your work
+effectively, e.g. by saying "hey I'm working on this file".
+
+A more powerful approach is to use branches for each change. This is most
+commonly used when working with GitHub-type repositories. In this case, it might
+not be necessary, nor is it as easy to do within the DST environment. So for
+now, the best approach is to just coordinate and communicate with each other
+while pushing and pulling to the `main` branch.
