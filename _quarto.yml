@@ -23,6 +23,7 @@ book:
       chapters:
       - docs/overview/index.qmd
       - docs/overview/roles.qmd
+      - docs/overview/meetings.qmd
     - part: "Lifecycle"
       chapters:
       - docs/getting-started/index.qmd
