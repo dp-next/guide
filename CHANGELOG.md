@@ -23,6 +23,15 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.4.0](https://github.com/dp-next/guide/compare/0.3.0..0.4.0) - 2026-09-19
+
+### ✨ Features
+
+- Move over project management doc
+  [#14](https://github.com/dp-next/guide/pull/14) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([31cd09e](https://github.com/dp-next/guide/commit/31cd09e37dd29e35d45ce18538f42ec6ec1a0f72))
+
 ## [0.3.0](https://github.com/dp-next/guide/compare/0.2.0..0.3.0) - 2026-09-19
 
 ### ✨ Features
