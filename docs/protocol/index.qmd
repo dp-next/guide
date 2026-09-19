@@ -1,0 +1,93 @@
+# Protocol {#sec-protocol}
+
+Protocol writing. It is expected that the first output from each publication
+will be an analysis protocol. There are two broad types of protocols: overall
+ones for a given work package and specific ones for a given project within (or
+across) a work package.
+
+::: callout-important
+Protocols are published to Zenodo. The publishing process will be handled by the
+Seedcase tool [zen-do](https://zen-do.seedcase-project.org), which makes the
+process much easier and sometimes can be set up to be done automatically.
+:::
+
+## Work package protocols
+
+These work package protocols are (generally) kept in stand-alone repositories,
+so that they can be directly built into a website and automatically uploaded to
+Zenodo whenever changes are made.
+
+These protocols are bigger and broader in scope, as they represent the overall
+activity within a work package. They also will have more people working on them,
+so writing them will be done through pull requests, where at least one other
+person reviews and approves the changes. In this way, any text on the `main`
+branch (and built onto the website) will already have been approved and is
+"publishable" in the current state.
+
+Sections within work package protocols may be more diverse compared to protocols
+for research projects, which have a template to follow.
+
+## Research project protocols
+
+Each research project is created from our
+[template](https://dp-next.github.io/template-project). Within the template
+contains a file that lists all the sections that should ideally be filled out
+for a protocol for the research project. When a research project is created from
+the template, the protocol file is kept in `docs/protocol/protocol.qmd`. See
+@fig-research-project-protocol for an overview of the protocol writing process.
+
+When you start working on your research project, begin by filling out the
+protocol file. Inside of it contains instructions and descriptions of different
+sections typically found in a research project's protocol. Protocols **are not a
+strict, "binding"** set of things you will do in your project. They are meant to
+help you as the researcher focus your research question(s) and hypotheses,
+define your analysis plan, and provide you with a rough roadmap to your final
+research publication.
+
+Ideally you will want to create a separate Git branch to create your protocol so
+that you can create a pull request where others can more easily review and
+approve it. After you've finished writing a protocol and made a pull request,
+notify someone (who will be coauthor on the project) to review and approve it.
+
+Once the protocol has been reviewed and approved, someone on the management
+group will publish it on Zenodo for you to obtain a Digital Object Identifier
+(DOI). This provides a clear record connecting the hypotheses and anticipated
+analytic approaches with the final analysis of the data.
+
+Any changes to the protocol as the project continues should be updated on
+Zenodo. If there are any changes, make sure to notify someone on the management
+group to update the Zenodo deposit and create a new record.
+
+```{mermaid}
+%%| label: fig-research-project-protocol
+%%| fig-cap: >-
+%%|   Protocol development steps to follow for a research project. The rounded
+%%|   boxes in orange are tasks you are responsible for doing. The rectangular
+%%|   ones in light blue are for coauthors or the management to do.
+%%| fig-alt: >-
+%%|   Boxes and arrows indicating the flow of tasks from preparation to
+%%|   publication. The boxes are colored according to whether they are the
+%%|   responsibility of the authors or the committee members. These tasks are
+%%|   visual representations of the text below.
+
+graph TB
+  branch("Create branch<br>to write protocol"):::yours
+  write("Protocol writing in<br>'docs/protocol/protocol.qmd'"):::yours
+  pr("Create pull request<br>when protocol is<br>ready"):::yours
+  review["Protocol review<br>and approval"]:::ours
+  zenodo["Protocol uploaded<br>to Zenodo"]:::ours
+  branch --> write --> pr --> review --> zenodo
+
+  classDef ours fill:#ADD8E6;
+  classDef yours fill:#FFA07A;
+```
+
+::: callout-tip
+If you desire (though it is not required), you could publish a stable version of
+the protocol as a preprint on online preprint servers such as arXiv or medRxiv.
+Keep in that you would be responsible for uploading it and keeping it updated.
+Because publishing to Zenodo is done semi-automatically by someone in the
+management group, you don't need to do the upload yourself for Zenodo.
+:::
+
+{{< include /includes/_acknowledgement-statement.qmd >}}
