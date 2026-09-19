@@ -1,0 +1,34 @@
+# Meetings {#sec-meetings}
+
+## Check-ins and "retrospectives"
+
+Every few months we have a "collaboration-assessment" meeting. At the least, the
+tech leads and/or representatives from each work package need to attend, but it
+is open to anyone working on DP-Next. We follow the style of a meeting type
+called a ["retrospective"](https://miro.com/agile/guide-to-retrospectives/) that
+is also used in the [Seedcase
+Project](https://guidebook.seedcase-project.org/iterations/end).
+
+During these meetings we discuss any challenges people are having and ways that
+we can improve collaboration within and between work packages. The focus is
+mainly on collaboration practices, tools, and methods that could benefit the
+project as a whole or multiple work packages. We discuss what went well, what
+didn't go well, and what we can improve. Then we create action items to address
+the issues we identified.
+
+## Update meetings
+
+Every week, most work package groups have a very short "update" meeting. During
+the meeting, the [roadmap manager](roles.qmd) shares their screen of the project
+board and go over the tasks on the board that are at the "in-progress" or later
+(e.g. "in review") states. Each person gives an a very brief update on their
+tasks they've been working on since the last update meeting. Pay attention to
+tasks that are blocked and briefly discuss if any action needs to be taken to
+resolve the block.
+
+::: callout-tip
+This style of meeting is modelled after the [Seedcase Project update
+meetings](https://team.seedcase-project.org/how-we-work/update-meetings), which
+itself models these meetings off of "daily standups" and similar iterative and
+incremental project management practices.
+:::
