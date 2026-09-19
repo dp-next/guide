@@ -23,6 +23,28 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.3.0](https://github.com/dp-next/guide/compare/0.2.0..0.3.0) - 2026-09-19
+
+### ✨ Features
+
+- Move meetings chapter over from wp1-ros
+  [#12](https://github.com/dp-next/guide/pull/12) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([a9b3827](https://github.com/dp-next/guide/commit/a9b38272333c1e623da5e9ac9b307a0aca225566))
+
+### 👷 CI/CD
+
+- Comment out broken Quarto render check (for now)
+  [#5](https://github.com/dp-next/guide/pull/5) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([a1ad7d0](https://github.com/dp-next/guide/commit/a1ad7d0993704ca6e766271fce9207a8e46140b3))
+
+### ❤️ New contributors
+
+- `@pre-commit-ci[bot]` started making automated contributions
+
+- `@dependabot[bot]` started making automated contributions
+
 ## [0.2.0](https://github.com/dp-next/guide/compare/0.1.1..0.2.0) - 2026-08-30
 
 ### ✨ Features
