@@ -23,6 +23,14 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.5.0](https://github.com/dp-next/guide/compare/0.4.0..0.5.0) - 2026-09-19
+
+### ✨ Features
+
+- Add protocol writing section [#16](https://github.com/dp-next/guide/pull/16)
+  by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([0da6734](https://github.com/dp-next/guide/commit/0da6734fe2c7b79133ecd9527e67c68fab9e8e90))
+
 ## [0.4.0](https://github.com/dp-next/guide/compare/0.3.0..0.4.0) - 2026-09-19
 
 ### ✨ Features
