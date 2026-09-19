@@ -93,113 +93,146 @@
     ]
   },
   {
+    "objectID": "docs/overview/project-management.html",
+    "href": "docs/overview/project-management.html",
+    "title": "3  Project management",
+    "section": "",
+    "text": "Every task that each person is working on is created, tracked, and visible on the GitHub Project board. The board is divided into columns that represent the state of the task (e.g. “to do”, “in progress”, “in review”, “done”). The board is used to track the progress of the project and to identify bottlenecks or issues that need to be addressed, reviewed, or discussed. We also assign tasks to people on the board, which is shown on the board itself to make it clear who is working on what.\nAll discussions happen on the GitHub issues, which are linked to the tasks on the board. These discussions are comments to the Issue, that way we keep all the information about a task in one place and so that others can participate in the discussion as well.",
+    "crumbs": [
+      "Overview",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Project management</span>"
+    ]
+  },
+  {
+    "objectID": "docs/overview/meetings.html",
+    "href": "docs/overview/meetings.html",
+    "title": "4  Meetings",
+    "section": "",
+    "text": "4.1 Check-ins and “retrospectives”\nEvery few months we have a “collaboration-assessment” meeting. At the least, the tech leads and/or representatives from each work package need to attend, but it is open to anyone working on DP-Next. We follow the style of a meeting type called a “retrospective” that is also used in the Seedcase Project.\nDuring these meetings we discuss any challenges people are having and ways that we can improve collaboration within and between work packages. The focus is mainly on collaboration practices, tools, and methods that could benefit the project as a whole or multiple work packages. We discuss what went well, what didn’t go well, and what we can improve. Then we create action items to address the issues we identified.",
+    "crumbs": [
+      "Overview",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Meetings</span>"
+    ]
+  },
+  {
+    "objectID": "docs/overview/meetings.html#update-meetings",
+    "href": "docs/overview/meetings.html#update-meetings",
+    "title": "4  Meetings",
+    "section": "4.2 Update meetings",
+    "text": "4.2 Update meetings\nEvery week, most work package groups have a very short “update” meeting. During the meeting, the roadmap manager shares their screen of the project board and go over the tasks on the board that are at the “in-progress” or later (e.g. “in review”) states. Each person gives an a very brief update on their tasks they’ve been working on since the last update meeting. Pay attention to tasks that are blocked and briefly discuss if any action needs to be taken to resolve the block.\n\n\n\n\n\n\nTip\n\n\n\nThis style of meeting is modelled after the Seedcase Project update meetings, which itself models these meetings off of “daily standups” and similar iterative and incremental project management practices.",
+    "crumbs": [
+      "Overview",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Meetings</span>"
+    ]
+  },
+  {
     "objectID": "docs/getting-started/new-project.html",
     "href": "docs/getting-started/new-project.html",
-    "title": "4  Start a new project",
+    "title": "6  Start a new project",
     "section": "",
-    "text": "If you are part of DP-Next (or not), you’ll be working on research projects, likely using data collected during DP-Next or from existing data (e.g. ADDITION-PRO). This chapter describes what to do when starting a new project. Below in Figure 4.1 is a visual summary of the steps to take, along with descriptions afterwards that outline the steps in more detail.\n\n\n\n\n\n\ngraph TB\n  A0(\"Review existing projects&lt;br&gt;for any overlap with your&lt;br&gt;potential project&lt;br&gt;(you)\"):::yours\n  A(\"Create GitHub&lt;br&gt;project proposal issue&lt;br&gt;(you)\"):::yours\n  B[\"Synopsis review&lt;br&gt;and approval&lt;br&gt;(us)\"]:::ours\n  C[\"Data agreement&lt;br&gt;(if required)&lt;br&gt;(us)\"]:::ours\n  D[\"Create GitHub&lt;br&gt;repository&lt;br&gt;(us)\"]:::ours\n  E(\"Complete TODOs in&lt;br&gt;'dp-next.yaml'&lt;br&gt;(you)\"):::yours\n  A0 --&gt; A --&gt; B --&gt; C --&gt; D --&gt; E\n\n  classDef ours fill:#ADD8E6;\n  classDef yours fill:#FFA07A;\n\n\n\n\nFigure 4.1: Steps to take for starting a project within DP-Next. The rounded boxes in orange are tasks you are responsible for doing. The rectangular ones in light blue are for the managers (“us”) to do.\n\n\n\n\n\nThe requirements for preparing a DP-Next publication apply to both internal and external researchers and should follow these steps:\n\n\n\n\nBefore proposing a project, make sure that you aren’t doing something that’s already done or being worked on. If there is a current ongoing project that is similar to what you wanted to work on, you can request to collaborate on that project with those researchers.\nIf there is no other project that is similar to your project idea, you can propose the project. Create a new issue in the WP1-Management repo (private for now) and select the “Project proposal” issue template. Fill in the fields there, which we’ll use to assess how relevant the project is within DP-Next.\nOnce you’ve created the issue, at least one member of the Steering Committee needs to review and approve it (usually either the principle investigator or the general coordinator). It is possible that someone may approve it, but later another committee member may request changes or give comments. If that happens, it is fairly easy to update the project. Once approved, someone with access permissions (e.g. in WP1) will create a GitHub repository for the project by using the DP-Next template project and following our naming convention.\nAfter the repository is created, you need to go through the repository and complete any TODO items, such as those found in the TODO.md file. Importantly, the TODO items in the dp-next.yaml file need to be filled. We use the information in this file to create an overview of the different projects going on in DP-Next.\n\n\n\n\n\n\n\nNote\n\n\n\nWe expect that many new projects based on DP-Next data will be done by DP-Next researchers. However, we also welcome collaborations with external researchers (i.e. those who are not part of DP-Next), though these projects must include at least one DP-Next member as coauthor so that projects follow our standards. Projects can be stand-alone or part of a wider initiative, such as a PhD or postdoc protocol.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nFor investigators not covered by the DP-Next agreements (by institutional affiliation to one of the Steno Diabetes Centres), a separate data agreement must be signed if they require data access. This agreement must be in place before any data access can be given.",
+    "text": "If you are part of DP-Next (or not), you’ll be working on research projects, likely using data collected during DP-Next or from existing data (e.g. ADDITION-PRO). This chapter describes what to do when starting a new project. Below in Figure 6.1 is a visual summary of the steps to take, along with descriptions afterwards that outline the steps in more detail.\n\n\n\n\n\n\ngraph TB\n  A0(\"Review existing projects&lt;br&gt;for any overlap with your&lt;br&gt;potential project&lt;br&gt;(you)\"):::yours\n  A(\"Create GitHub&lt;br&gt;project proposal issue&lt;br&gt;(you)\"):::yours\n  B[\"Synopsis review&lt;br&gt;and approval&lt;br&gt;(us)\"]:::ours\n  C[\"Data agreement&lt;br&gt;(if required)&lt;br&gt;(us)\"]:::ours\n  D[\"Create GitHub&lt;br&gt;repository&lt;br&gt;(us)\"]:::ours\n  E(\"Complete TODOs in&lt;br&gt;'dp-next.yaml'&lt;br&gt;(you)\"):::yours\n  A0 --&gt; A --&gt; B --&gt; C --&gt; D --&gt; E\n\n  classDef ours fill:#ADD8E6;\n  classDef yours fill:#FFA07A;\n\n\n\n\nFigure 6.1: Steps to take for starting a project within DP-Next. The rounded boxes in orange are tasks you are responsible for doing. The rectangular ones in light blue are for the managers (“us”) to do.\n\n\n\n\n\nThe requirements for preparing a DP-Next publication apply to both internal and external researchers and should follow these steps:\n\n\n\n\nBefore proposing a project, make sure that you aren’t doing something that’s already done or being worked on. If there is a current ongoing project that is similar to what you wanted to work on, you can request to collaborate on that project with those researchers.\nIf there is no other project that is similar to your project idea, you can propose the project. Create a new issue in the WP1-Management repo (private for now) and select the “Project proposal” issue template. Fill in the fields there, which we’ll use to assess how relevant the project is within DP-Next.\nOnce you’ve created the issue, at least one member of the Steering Committee needs to review and approve it (usually either the principle investigator or the general coordinator). It is possible that someone may approve it, but later another committee member may request changes or give comments. If that happens, it is fairly easy to update the project. Once approved, someone with access permissions (e.g. in WP1) will create a GitHub repository for the project by using the DP-Next template project and following our naming convention.\nAfter the repository is created, you need to go through the repository and complete any TODO items, such as those found in the TODO.md file. Importantly, the TODO items in the dp-next.yaml file need to be filled. We use the information in this file to create an overview of the different projects going on in DP-Next.\n\n\n\n\n\n\n\nNote\n\n\n\nWe expect that many new projects based on DP-Next data will be done by DP-Next researchers. However, we also welcome collaborations with external researchers (i.e. those who are not part of DP-Next), though these projects must include at least one DP-Next member as coauthor so that projects follow our standards. Projects can be stand-alone or part of a wider initiative, such as a PhD or postdoc protocol.\n\n\n\n\n\n\n\n\nWarning\n\n\n\nFor investigators not covered by the DP-Next agreements (by institutional affiliation to one of the Steno Diabetes Centres), a separate data agreement must be signed if they require data access. This agreement must be in place before any data access can be given.",
     "crumbs": [
       "Lifecycle",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Start a new project</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Start a new project</span>"
     ]
   },
   {
     "objectID": "docs/getting-started/dst.html",
     "href": "docs/getting-started/dst.html",
-    "title": "5  Denmark Statistics",
+    "title": "7  Denmark Statistics",
     "section": "",
-    "text": "5.1 Configure Git\nWorking on the Denmark Statistics (DST) servers brings with it unique challenges when it comes to collaborating together. This page describes how we’ve set it up to effectively collaborate on the DST servers.\nThe very first step is to configure your Git. You thankfully only need to do once (or after DST has reset your profile). If you haven’t already configured your Git, open a terminal (called Git Bash in DST) and type out these commands:\nReplacing the YOUR NAME and name@email.com with your actual details.",
+    "text": "7.1 Configure Git\nWorking on the Denmark Statistics (DST) servers brings with it unique challenges when it comes to collaborating together. This page describes how we’ve set it up to effectively collaborate on the DST servers.\nThe very first step is to configure your Git. You thankfully only need to do once (or after DST has reset your profile). If you haven’t already configured your Git, open a terminal (called Git Bash in DST) and type out these commands:\nReplacing the YOUR NAME and name@email.com with your actual details.",
     "crumbs": [
       "Lifecycle",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Denmark Statistics</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Denmark Statistics</span>"
     ]
   },
   {
     "objectID": "docs/getting-started/dst.html#configure-git",
     "href": "docs/getting-started/dst.html#configure-git",
-    "title": "5  Denmark Statistics",
+    "title": "7  Denmark Statistics",
     "section": "",
     "text": "Terminal\n\ngit config --global user.name \"YOUR NAME\"\ngit config --global user.email \"name@email.com\"\ngit config --global init.defaultBranch main",
     "crumbs": [
       "Lifecycle",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Denmark Statistics</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Denmark Statistics</span>"
     ]
   },
   {
     "objectID": "docs/getting-started/dst.html#the-folder-structure",
     "href": "docs/getting-started/dst.html#the-folder-structure",
-    "title": "5  Denmark Statistics",
-    "section": "5.2 The folder structure",
-    "text": "5.2 The folder structure\n\nBefore setting up this folder structure, the first thing to decide is what the “product”/output will be and what its name (or abbreviation) will be. The reason for this, as per our design principles, is that we want to structure work around products and around teams (or groups), rather than individual people. So a folder structure should reflect how to work on the product as a group.\nWe’ll use an example of a product called wp2-analysis that will be done within DST. There are two people working on this product (for now) called person-name-1 and person-name-2. The folder structure will look like this (don’t create it yet!):\nworkdata/&lt;project-id&gt;/\n└── wp2-analysis/\n    ├── remote/ # Contains only Git specific folders\n    ├── person-name-1/\n    │   ├── .git/\n    │   ├── data/\n    │   ├── docs/\n    │   ├── R/\n    │   ├── wp2-analysis.Rproj\n    │   ├── DESCRIPTION\n    │   ├── _targets.R\n    │   └── README.md\n    └── person-name-2/\n        ├── .git/\n        ├── data/\n        ├── docs/\n        ├── R/\n        ├── wp2-analysis.Rproj\n        ├── DESCRIPTION\n        ├── _targets.R\n        └── README.md\nThe remote/ folder is a (bare) Git repository, meaning that the only files and folders found within it are Git specific folders and files, such as branches/, hooks/, objects/, refs/, config, description, and HEAD. The other folders (for each collaborator) are the “local” repositories that have the standard structure for data analysis projects. In this case, the “remote” folder is a bit like a GitHub repository, while each collaborator’s “local” repository is like their own local repository of the GitHub (remote) repository.\n\n\n\n\n\n\nImportant\n\n\n\nWe’ll describe the steps later on, but an important note is that each individual person will need to create their own folder. That’s because servers like DST assigns the “owner” of the folder to the user who created it, so you may encounter issues if someone else made the folder for you.",
+    "title": "7  Denmark Statistics",
+    "section": "7.2 The folder structure",
+    "text": "7.2 The folder structure\n\nBefore setting up this folder structure, the first thing to decide is what the “product”/output will be and what its name (or abbreviation) will be. The reason for this, as per our design principles, is that we want to structure work around products and around teams (or groups), rather than individual people. So a folder structure should reflect how to work on the product as a group.\nWe’ll use an example of a product called wp2-analysis that will be done within DST. There are two people working on this product (for now) called person-name-1 and person-name-2. The folder structure will look like this (don’t create it yet!):\nworkdata/&lt;project-id&gt;/\n└── wp2-analysis/\n    ├── remote/ # Contains only Git specific folders\n    ├── person-name-1/\n    │   ├── .git/\n    │   ├── data/\n    │   ├── docs/\n    │   ├── R/\n    │   ├── wp2-analysis.Rproj\n    │   ├── DESCRIPTION\n    │   ├── _targets.R\n    │   └── README.md\n    └── person-name-2/\n        ├── .git/\n        ├── data/\n        ├── docs/\n        ├── R/\n        ├── wp2-analysis.Rproj\n        ├── DESCRIPTION\n        ├── _targets.R\n        └── README.md\nThe remote/ folder is a (bare) Git repository, meaning that the only files and folders found within it are Git specific folders and files, such as branches/, hooks/, objects/, refs/, config, description, and HEAD. The other folders (for each collaborator) are the “local” repositories that have the standard structure for data analysis projects. In this case, the “remote” folder is a bit like a GitHub repository, while each collaborator’s “local” repository is like their own local repository of the GitHub (remote) repository.\n\n\n\n\n\n\nImportant\n\n\n\nWe’ll describe the steps later on, but an important note is that each individual person will need to create their own folder. That’s because servers like DST assigns the “owner” of the folder to the user who created it, so you may encounter issues if someone else made the folder for you.",
     "crumbs": [
       "Lifecycle",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Denmark Statistics</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Denmark Statistics</span>"
     ]
   },
   {
     "objectID": "docs/getting-started/dst.html#creating-the-parent-folder",
     "href": "docs/getting-started/dst.html#creating-the-parent-folder",
-    "title": "5  Denmark Statistics",
-    "section": "5.3 Creating the “parent” folder",
-    "text": "5.3 Creating the “parent” folder\nYou need to first open a terminal in the right location and create the correct folder. To do that, open up the project’s workdata/ folder using the File Explorer in the DST Windows desktop. The project folder should be at a location like E:/workdata/7000000/ (the project ID is usually a seven-digit number starting with 7). When in this folder, right-click somewhere in the folder and select the menu option “Open in Git Bash” (or something similar). A terminal program should open up at this location. In the new terminal app, create the new research project folder (wp2-analysis from the example above):\n\n\nTerminal\n\nmkdir wp2-analysis\n\nThe mkdir command means “make directory” (or folder). Next, you want to move your “working directory” (the folder location your terminal is in) into this newly created folder using the cd command (change directory):\n\n\nTerminal\n\ncd wp2-analysis\n\nYou are now ready for the next steps.",
+    "title": "7  Denmark Statistics",
+    "section": "7.3 Creating the “parent” folder",
+    "text": "7.3 Creating the “parent” folder\nYou need to first open a terminal in the right location and create the correct folder. To do that, open up the project’s workdata/ folder using the File Explorer in the DST Windows desktop. The project folder should be at a location like E:/workdata/7000000/ (the project ID is usually a seven-digit number starting with 7). When in this folder, right-click somewhere in the folder and select the menu option “Open in Git Bash” (or something similar). A terminal program should open up at this location. In the new terminal app, create the new research project folder (wp2-analysis from the example above):\n\n\nTerminal\n\nmkdir wp2-analysis\n\nThe mkdir command means “make directory” (or folder). Next, you want to move your “working directory” (the folder location your terminal is in) into this newly created folder using the cd command (change directory):\n\n\nTerminal\n\ncd wp2-analysis\n\nYou are now ready for the next steps.",
     "crumbs": [
       "Lifecycle",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Denmark Statistics</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Denmark Statistics</span>"
     ]
   },
   {
     "objectID": "docs/getting-started/dst.html#creating-a-git-remote-as-a-folder",
     "href": "docs/getting-started/dst.html#creating-a-git-remote-as-a-folder",
-    "title": "5  Denmark Statistics",
-    "section": "5.4 Creating a Git “remote” as a folder",
-    "text": "5.4 Creating a Git “remote” as a folder\nTo create the “remote” folder, first create the wp2-analysis/ folder. Then, open a terminal into the wp2-analysis/ folder and run the following command:\n\n\nTerminal\n\ngit init --bare remote\n\nThis will then create the remote/ folder with the necessary Git files and folders that will allow it to be treated as a Git remote repository (like with GitHub). This is the folder each collaborator will push and pull to (more on that later below).",
+    "title": "7  Denmark Statistics",
+    "section": "7.4 Creating a Git “remote” as a folder",
+    "text": "7.4 Creating a Git “remote” as a folder\nTo create the “remote” folder, first create the wp2-analysis/ folder. Then, open a terminal into the wp2-analysis/ folder and run the following command:\n\n\nTerminal\n\ngit init --bare remote\n\nThis will then create the remote/ folder with the necessary Git files and folders that will allow it to be treated as a Git remote repository (like with GitHub). This is the folder each collaborator will push and pull to (more on that later below).",
     "crumbs": [
       "Lifecycle",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Denmark Statistics</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Denmark Statistics</span>"
     ]
   },
   {
     "objectID": "docs/getting-started/dst.html#creating-the-first-local-repository",
     "href": "docs/getting-started/dst.html#creating-the-first-local-repository",
-    "title": "5  Denmark Statistics",
-    "section": "5.5 Creating the first “local” repository",
-    "text": "5.5 Creating the first “local” repository\nNext, one of the collaborators (e.g. person-name-1) needs to create their local repository, ideally using a standard structure as set up by the prodigenr package. To do this run the following R function while in the terminal:\n\n\nTerminal\n\nRscript -e 'prodigenr::setup_project(\"wp2-analysis\")'\n\nThis will create a folder with the .Rproj file name as wp2-analysis. But since we want each subfolder to be the name of the collaborator, you’ll need to rename the folder to person-name-1 (name or other identifier of the person doing these tasks, without spaces). You can use the mv command in the Git Bash terminal, which renames a file or folder to a new name using the pattern mv OLD NEW.\n\n\nTerminal\n\nmv wp2-analysis person-name-1\n\nNext, you’ll need to connect this local repository to the remote/ folder. Before you do that, you’ll need to “move into” that new folder by using the “change directory” command cd.\n\n\nTerminal\n\ncd person-name-1\n\nNext, you can add all the files in that directory into the Git history:\n\n\nTerminal\n\ngit add .\ngit commit -m \"start of project\"\n\nNow that this folder has files saved to the Git history, you can connect the repository to the remote/ folder.\n\n\nTerminal\n\ngit remote add origin ../remote\n\nYou’ll use the relative path ../remote to mean “one folder up” (../) as you will always be keeping both the remote and “local” (collaborator) repositories within the same parent folder (e.g. wp2-analysis/).\nNext you’ll need to push the Git history to the remote, while also telling the project’s Git to use that remote whenever you use push and pull with the -u option:\n\n\nTerminal\n\ngit push -u origin main\n\nYou’re now ready to collaborate! 🎉",
+    "title": "7  Denmark Statistics",
+    "section": "7.5 Creating the first “local” repository",
+    "text": "7.5 Creating the first “local” repository\nNext, one of the collaborators (e.g. person-name-1) needs to create their local repository, ideally using a standard structure as set up by the prodigenr package. To do this run the following R function while in the terminal:\n\n\nTerminal\n\nRscript -e 'prodigenr::setup_project(\"wp2-analysis\")'\n\nThis will create a folder with the .Rproj file name as wp2-analysis. But since we want each subfolder to be the name of the collaborator, you’ll need to rename the folder to person-name-1 (name or other identifier of the person doing these tasks, without spaces). You can use the mv command in the Git Bash terminal, which renames a file or folder to a new name using the pattern mv OLD NEW.\n\n\nTerminal\n\nmv wp2-analysis person-name-1\n\nNext, you’ll need to connect this local repository to the remote/ folder. Before you do that, you’ll need to “move into” that new folder by using the “change directory” command cd.\n\n\nTerminal\n\ncd person-name-1\n\nNext, you can add all the files in that directory into the Git history:\n\n\nTerminal\n\ngit add .\ngit commit -m \"start of project\"\n\nNow that this folder has files saved to the Git history, you can connect the repository to the remote/ folder.\n\n\nTerminal\n\ngit remote add origin ../remote\n\nYou’ll use the relative path ../remote to mean “one folder up” (../) as you will always be keeping both the remote and “local” (collaborator) repositories within the same parent folder (e.g. wp2-analysis/).\nNext you’ll need to push the Git history to the remote, while also telling the project’s Git to use that remote whenever you use push and pull with the -u option:\n\n\nTerminal\n\ngit push -u origin main\n\nYou’re now ready to collaborate! 🎉",
     "crumbs": [
       "Lifecycle",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Denmark Statistics</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Denmark Statistics</span>"
     ]
   },
   {
     "objectID": "docs/getting-started/dst.html#creating-more-local-repositories",
     "href": "docs/getting-started/dst.html#creating-more-local-repositories",
-    "title": "5  Denmark Statistics",
-    "section": "5.6 Creating more “local” repositories",
-    "text": "5.6 Creating more “local” repositories\nNow that the “remote” folder has been officially set up, it’s easy to add another “local” repository for another collaborator (e.g. person-name-2). Replace person-name-2 with the name (or other identifier) of the second collaborator (without spaces). This step should be done by the other collaborator (e.g. the person who’s name is person-name-2). You’ll need to open the terminal in the wp2-analysis folder. You can check if you are in the right folder by using the pwd command (print working directory).\n\n\nTerminal\n\npwd\n\nAnd it should output: E:/workdata/PROJECT-ID/wp2-analysis. If you are not at that location, make sure to open the File Explorer, find that folder, and right-click somewhere to select “Open in Git Bash” in the menu. When you’re in the right folder, run this command:\n\n\nTerminal\n\ngit clone ./remote person-name-2\n\nThis will create a new folder called person-name-2/ with the same structure as the first collaborator’s local repository. It will also be connected to the same remote/ folder for pushing and pulling changes. This collaborator can now open the project in RStudio, Positron, or any other editor they like.",
+    "title": "7  Denmark Statistics",
+    "section": "7.6 Creating more “local” repositories",
+    "text": "7.6 Creating more “local” repositories\nNow that the “remote” folder has been officially set up, it’s easy to add another “local” repository for another collaborator (e.g. person-name-2). Replace person-name-2 with the name (or other identifier) of the second collaborator (without spaces). This step should be done by the other collaborator (e.g. the person who’s name is person-name-2). You’ll need to open the terminal in the wp2-analysis folder. You can check if you are in the right folder by using the pwd command (print working directory).\n\n\nTerminal\n\npwd\n\nAnd it should output: E:/workdata/PROJECT-ID/wp2-analysis. If you are not at that location, make sure to open the File Explorer, find that folder, and right-click somewhere to select “Open in Git Bash” in the menu. When you’re in the right folder, run this command:\n\n\nTerminal\n\ngit clone ./remote person-name-2\n\nThis will create a new folder called person-name-2/ with the same structure as the first collaborator’s local repository. It will also be connected to the same remote/ folder for pushing and pulling changes. This collaborator can now open the project in RStudio, Positron, or any other editor they like.",
     "crumbs": [
       "Lifecycle",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Denmark Statistics</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Denmark Statistics</span>"
     ]
   },
   {
     "objectID": "docs/getting-started/dst.html#using-the-remote-to-collaborate",
     "href": "docs/getting-started/dst.html#using-the-remote-to-collaborate",
-    "title": "5  Denmark Statistics",
-    "section": "5.7 Using the “remote” to collaborate",
-    "text": "5.7 Using the “remote” to collaborate\nNow that you have the remote and multiple local folders for each collaborator, you can start collaborating together! Whenever either collaborator makes changes to their local repository, regularly “push” and “pull” to the remote (via RStudio’s interface or via the terminal) so that the remote is always up to date. This can be visually represented as follows:\n\n\n\n\n\nflowchart TB\n    A[\"'person-name-1/'&lt;br&gt;repository\"] --&gt;|Push| B[\"'remote/'&lt;br&gt;repository\"]\n    B --&gt;|Pull| A\n    B --&gt;|Pull| C[\"'person-name-2/'&lt;br&gt;repository\"]\n    C --&gt;|Push| B\n\n\n\n\n\n\nThis way, both collaborators can work on their own local repositories, but they can easily share their changes with each other by pushing and pulling to the remote repository. It also means that any collaborator can contribute to the product repository without impacting the work of other collaborators. This allows for effective collaboration while working on the DST servers, even without access to external platforms like GitHub.\nThere will of course be some issues that will come up, especially merge conflicts. If each collaborator is pushing and pulling to the main (could also be called master) branch, then you will likely encounter merge conflicts. This isn’t necessarily a bad thing, as you can always resolve them. And it’s also fairly easy to avoid if you communicate with each other and coordinate your work effectively, e.g. by saying “hey I’m working on this file”.\nA more powerful approach is to use branches for each change. This is most commonly used when working with GitHub-type repositories. In this case, it might not be necessary, nor is it as easy to do within the DST environment. So for now, the best approach is to just coordinate and communicate with each other while pushing and pulling to the main branch.",
+    "title": "7  Denmark Statistics",
+    "section": "7.7 Using the “remote” to collaborate",
+    "text": "7.7 Using the “remote” to collaborate\nNow that you have the remote and multiple local folders for each collaborator, you can start collaborating together! Whenever either collaborator makes changes to their local repository, regularly “push” and “pull” to the remote (via RStudio’s interface or via the terminal) so that the remote is always up to date. This can be visually represented as follows:\n\n\n\n\n\nflowchart TB\n    A[\"'person-name-1/'&lt;br&gt;repository\"] --&gt;|Push| B[\"'remote/'&lt;br&gt;repository\"]\n    B --&gt;|Pull| A\n    B --&gt;|Pull| C[\"'person-name-2/'&lt;br&gt;repository\"]\n    C --&gt;|Push| B\n\n\n\n\n\n\nThis way, both collaborators can work on their own local repositories, but they can easily share their changes with each other by pushing and pulling to the remote repository. It also means that any collaborator can contribute to the product repository without impacting the work of other collaborators. This allows for effective collaboration while working on the DST servers, even without access to external platforms like GitHub.\nThere will of course be some issues that will come up, especially merge conflicts. If each collaborator is pushing and pulling to the main (could also be called master) branch, then you will likely encounter merge conflicts. This isn’t necessarily a bad thing, as you can always resolve them. And it’s also fairly easy to avoid if you communicate with each other and coordinate your work effectively, e.g. by saying “hey I’m working on this file”.\nA more powerful approach is to use branches for each change. This is most commonly used when working with GitHub-type repositories. In this case, it might not be necessary, nor is it as easy to do within the DST environment. So for now, the best approach is to just coordinate and communicate with each other while pushing and pulling to the main branch.",
     "crumbs": [
       "Lifecycle",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Denmark Statistics</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Denmark Statistics</span>"
     ]
   },
   {
     "objectID": "docs/publishing/authorship.html",
     "href": "docs/publishing/authorship.html",
-    "title": "6  Authorship",
+    "title": "8  Authorship",
     "section": "",
-    "text": "Authorship publications should reflect a substantial, direct contribution to the work presented in each paper. We aim to use the Vancouver Guidelines as a base and expand on them to reflect nontraditional research contributions. Nontraditional research contributions are activities that contribute in a direct way to the creation of the publication, such as improving data quality, developing software, or improving analysis code.\nWhen you create the project proposal (as in Chapter 4), you should have an approximate idea of who the authors are and their order in the list. As the project continues, though, this could naturally change. Anyone who has contributed meaningfully or substantially to research project should be given the chance to become coauthor.\nAll potential coauthors should be involved early in the research project, ideally at the project proposal stage. In addition to the named authors, all papers need to include the group authorship of ‘on behalf of the DP-Next investigators’, linking to the current list of DP-Next investigators\nKeep in mind that author lists and orders aren’t fixed at the start and can be amended after project approval by consensus among the authors or by the Steering Committee if the factual contributions differ from those foreseen initially. Ultimately, the Steering Committee has the final authority to decide on and determine the author list of any given paper. If disagreements about authorship cannot be resolved by consensus within the author group, the Steering Committee will make the final decision.\nRegardless of named authors, you should make sure to include a detailed contributors list along with their described contributions as per the CRediT roles. At the least, the contributors and CRediT roles should be kept updated in the dp-next.yaml file and ideally be mentioned somewhere in the paper or in the supplemental material. The Steering Committee will ensure that such a document is publicly accessible and up to date.\nMake sure to also include an acknowledgement to external parties such as funders, institutions, participants, and service providers in papers and other material you present or disseminate elsewhere. The Steering Committee will maintain an updated acknowledgement statement for the DP-Next project in the template-project.",
+    "text": "Authorship publications should reflect a substantial, direct contribution to the work presented in each paper. We aim to use the Vancouver Guidelines as a base and expand on them to reflect nontraditional research contributions. Nontraditional research contributions are activities that contribute in a direct way to the creation of the publication, such as improving data quality, developing software, or improving analysis code.\nWhen you create the project proposal (as in Chapter 6), you should have an approximate idea of who the authors are and their order in the list. As the project continues, though, this could naturally change. Anyone who has contributed meaningfully or substantially to research project should be given the chance to become coauthor.\nAll potential coauthors should be involved early in the research project, ideally at the project proposal stage. In addition to the named authors, all papers need to include the group authorship of ‘on behalf of the DP-Next investigators’, linking to the current list of DP-Next investigators\nKeep in mind that author lists and orders aren’t fixed at the start and can be amended after project approval by consensus among the authors or by the Steering Committee if the factual contributions differ from those foreseen initially. Ultimately, the Steering Committee has the final authority to decide on and determine the author list of any given paper. If disagreements about authorship cannot be resolved by consensus within the author group, the Steering Committee will make the final decision.\nRegardless of named authors, you should make sure to include a detailed contributors list along with their described contributions as per the CRediT roles. At the least, the contributors and CRediT roles should be kept updated in the dp-next.yaml file and ideally be mentioned somewhere in the paper or in the supplemental material. The Steering Committee will ensure that such a document is publicly accessible and up to date.\nMake sure to also include an acknowledgement to external parties such as funders, institutions, participants, and service providers in papers and other material you present or disseminate elsewhere. The Steering Committee will maintain an updated acknowledgement statement for the DP-Next project in the template-project.",
     "crumbs": [
       "Lifecycle",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Authorship</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Authorship</span>"
     ]
   },
   {
@@ -207,7 +240,7 @@
     "href": "CHANGELOG.html",
     "title": "Changelog",
     "section": "",
-    "text": "0.2.0 - 2026-08-30\nSince we follow Conventional Commits, we’re able to automatically create formal “releases” of the website based on our commit messages. Releases in the context of websites are simply snapshots in time of the website content. We use Cocogitto to be able to automatically create these releases, which uses SemVar as the version numbering scheme, and git-cliff to generate the changelog based on the commit messages.\nBecause releases are created based on commit messages, a new release is created quite often—sometimes several times in a day. This also means that any individual release will not have many changes within it. Below is a list of the releases we’ve made so far, along with what was changed within each release.\nCommits from bots, like dependabot or pre-commit-ci, are not included in the changelog.",
+    "text": "0.3.0 - 2026-09-19\nSince we follow Conventional Commits, we’re able to automatically create formal “releases” of the website based on our commit messages. Releases in the context of websites are simply snapshots in time of the website content. We use Cocogitto to be able to automatically create these releases, which uses SemVar as the version numbering scheme, and git-cliff to generate the changelog based on the commit messages.\nBecause releases are created based on commit messages, a new release is created quite often—sometimes several times in a day. This also means that any individual release will not have many changes within it. Below is a list of the releases we’ve made so far, along with what was changed within each release.\nCommits from bots, like dependabot or pre-commit-ci, are not included in the changelog.",
     "crumbs": [
       "Appendices",
       "Changelog"
@@ -218,7 +251,7 @@
     "href": "CHANGELOG.html#section",
     "title": "Changelog",
     "section": "",
-    "text": "✨ Features\n\nMove authorships section over from wp1-ros #4 by @lwjohnst86 (ce029c1)\n\n\n\n💄 Styling\n\nDon’t number appendices #1 by @lwjohnst86 (e876d30)",
+    "text": "✨ Features\n\nMove meetings chapter over from wp1-ros #12 by @lwjohnst86 (a9b3827)\n\n\n\n👷 CI/CD\n\nComment out broken Quarto render check (for now) #5 by @lwjohnst86 (a1ad7d0)\n\n\n\n❤️ New contributors\n\n@pre-commit-ci[bot] started making automated contributions\n@dependabot[bot] started making automated contributions",
     "crumbs": [
       "Appendices",
       "Changelog"
@@ -228,8 +261,8 @@
     "objectID": "CHANGELOG.html#section-1",
     "href": "CHANGELOG.html#section-1",
     "title": "Changelog",
-    "section": "0.1.1 - 2026-08-30",
-    "text": "0.1.1 - 2026-08-30\n\n🐛 Fixes\n\nRemove . before filename in code chunks by @lwjohnst86 (116392c)\n\n\n\n👷 CI/CD\n\nFix malformed workflow by @lwjohnst86 (278fce3)",
+    "section": "0.2.0 - 2026-08-30",
+    "text": "0.2.0 - 2026-08-30\n\n✨ Features\n\nMove authorships section over from wp1-ros #4 by @lwjohnst86 (ce029c1)\n\n\n\n💄 Styling\n\nDon’t number appendices #1 by @lwjohnst86 (e876d30)",
     "crumbs": [
       "Appendices",
       "Changelog"
@@ -238,6 +271,17 @@
   {
     "objectID": "CHANGELOG.html#section-2",
     "href": "CHANGELOG.html#section-2",
+    "title": "Changelog",
+    "section": "0.1.1 - 2026-08-30",
+    "text": "0.1.1 - 2026-08-30\n\n🐛 Fixes\n\nRemove . before filename in code chunks by @lwjohnst86 (116392c)\n\n\n\n👷 CI/CD\n\nFix malformed workflow by @lwjohnst86 (278fce3)",
+    "crumbs": [
+      "Appendices",
+      "Changelog"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-3",
+    "href": "CHANGELOG.html#section-3",
     "title": "Changelog",
     "section": "0.1.0 - 2026-08-30",
     "text": "0.1.0 - 2026-08-30\n\n✨ Features\n\nAdd initial Quarto config file and index files by @lwjohnst86 (1b3dcea)\nMove over section on starting a project by @lwjohnst86 (e7c19e6)\nMove “roles” chapter into this guide by @lwjohnst86 (29b4021)\nMove and update the DST setup guide by @lwjohnst86 (d5e8640)\n\n\n\n🐛 Fixes\n\nAdd link to Turing Way website by @lwjohnst86 (a5f2e85)\n\n\n\n♻️ Refactor\n\nRename to overview from general by @lwjohnst86 (1a71f31)\n\n\n\n📝 Documentation\n\nMinor edits to community health files by @lwjohnst86 (41f4afd)\n\n\n\n💄 Styling\n\nAdd DP-Next Quarto theme by @lwjohnst86 (fb45ae0)\n\n\n\n👩‍💻 Miscellaneous\n\nStart of guide repo by @lwjohnst86 (8feebcc)\nSwitch to use dp-next-theme in justfile by @lwjohnst86 (06fce32)\nUpdate and run pre-commit hooks by @lwjohnst86 (f937cf2)\nExclude _book/ and _extensions/ from TODO listing by @lwjohnst86 (ae8107a)\nIgnore Quarto *_files/ by @lwjohnst86 (102e2ed)\n\n\n\n❤️ New contributors\n\n@github-actions[bot] started making automated contributions\n@lwjohnst86 made their first contribution",

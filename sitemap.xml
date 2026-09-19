@@ -2,42 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://dp-next.github.io/guide/index.html</loc>
-    <lastmod>2026-08-30T14:37:21.153Z</lastmod>
+    <lastmod>2026-09-19T12:30:50.038Z</lastmod>
   </url>
   <url>
     <loc>https://dp-next.github.io/guide/docs/overview/roles.html</loc>
-    <lastmod>2026-08-30T14:37:21.153Z</lastmod>
+    <lastmod>2026-09-19T12:30:50.037Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dp-next.github.io/guide/docs/overview/project-management.html</loc>
+    <lastmod>2026-09-19T12:30:50.037Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dp-next.github.io/guide/docs/overview/meetings.html</loc>
+    <lastmod>2026-09-19T12:30:50.037Z</lastmod>
   </url>
   <url>
     <loc>https://dp-next.github.io/guide/docs/getting-started/new-project.html</loc>
-    <lastmod>2026-08-30T14:37:21.152Z</lastmod>
+    <lastmod>2026-09-19T12:30:50.036Z</lastmod>
   </url>
   <url>
     <loc>https://dp-next.github.io/guide/docs/getting-started/dst.html</loc>
-    <lastmod>2026-08-30T14:37:21.152Z</lastmod>
+    <lastmod>2026-09-19T12:30:50.035Z</lastmod>
   </url>
   <url>
     <loc>https://dp-next.github.io/guide/docs/publishing/authorship.html</loc>
-    <lastmod>2026-08-30T14:37:21.153Z</lastmod>
+    <lastmod>2026-09-19T12:30:50.037Z</lastmod>
   </url>
   <url>
     <loc>https://dp-next.github.io/guide/CHANGELOG.html</loc>
-    <lastmod>2026-08-30T14:37:21.141Z</lastmod>
+    <lastmod>2026-09-19T12:30:50.025Z</lastmod>
   </url>
   <url>
     <loc>https://dp-next.github.io/guide/CONTRIBUTING.html</loc>
-    <lastmod>2026-08-30T14:37:21.141Z</lastmod>
+    <lastmod>2026-09-19T12:30:50.025Z</lastmod>
   </url>
   <url>
     <loc>https://dp-next.github.io/guide/CODE_OF_CONDUCT.html</loc>
-    <lastmod>2026-08-30T14:37:21.141Z</lastmod>
+    <lastmod>2026-09-19T12:30:50.025Z</lastmod>
   </url>
   <url>
     <loc>https://dp-next.github.io/guide/LICENSE.html</loc>
-    <lastmod>2026-08-30T14:37:21.141Z</lastmod>
+    <lastmod>2026-09-19T12:30:50.025Z</lastmod>
   </url>
   <url>
     <loc>https://dp-next.github.io/guide/Guide-to-the-research-lifecycle-in-DP-Next.pdf</loc>
-    <lastmod>2026-08-30T14:37:47.037Z</lastmod>
+    <lastmod>2026-09-19T12:31:17.964Z</lastmod>
   </url>
 </urlset>
