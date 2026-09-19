@@ -1,0 +1,19 @@
+## Acknowledgement Statement
+
+Any publication, dissemination, or communication that comes from or is related
+to DP-Next should mention the following acknowledgement statements.
+
+For all publications:
+
+> The DP-Next project was funded by a Steno National Collaborative Grant from
+> the Novo Nordisk Foundation (Grant number NNF24OC008916). Additional funding
+> was obtained from all Steno Diabetes Centers.
+
+Additionally for publications involving data collected through
+[OPEN](https://open.rsyd.dk), which is used for collecting survey data from e.g.
+the electronic questionnaires used in Work Package 3 (questionnaire study and
+the clinical study):
+
+> Electronic questionnaires were distributed using the Open Patient data
+> Explorative Network (OPEN) from Odense University Hospital, Region of Southern
+> Denmark (open.rsyd.dk).
