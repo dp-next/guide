@@ -225,14 +225,47 @@
     ]
   },
   {
+    "objectID": "docs/protocol/index.html",
+    "href": "docs/protocol/index.html",
+    "title": "8  Protocol",
+    "section": "",
+    "text": "8.1 Work package protocols\nProtocol writing. It is expected that the first output from each publication will be an analysis protocol. There are two broad types of protocols: overall ones for a given work package and specific ones for a given project within (or across) a work package.\nThese work package protocols are (generally) kept in stand-alone repositories, so that they can be directly built into a website and automatically uploaded to Zenodo whenever changes are made.\nThese protocols are bigger and broader in scope, as they represent the overall activity within a work package. They also will have more people working on them, so writing them will be done through pull requests, where at least one other person reviews and approves the changes. In this way, any text on the main branch (and built onto the website) will already have been approved and is “publishable” in the current state.\nSections within work package protocols may be more diverse compared to protocols for research projects, which have a template to follow.",
+    "crumbs": [
+      "Lifecycle",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Protocol</span>"
+    ]
+  },
+  {
+    "objectID": "docs/protocol/index.html#research-project-protocols",
+    "href": "docs/protocol/index.html#research-project-protocols",
+    "title": "8  Protocol",
+    "section": "8.2 Research project protocols",
+    "text": "8.2 Research project protocols\nEach research project is created from our template. Within the template contains a file that lists all the sections that should ideally be filled out for a protocol for the research project. When a research project is created from the template, the protocol file is kept in docs/protocol/protocol.qmd. See Figure 8.1 for an overview of the protocol writing process.\nWhen you start working on your research project, begin by filling out the protocol file. Inside of it contains instructions and descriptions of different sections typically found in a research project’s protocol. Protocols are not a strict, “binding” set of things you will do in your project. They are meant to help you as the researcher focus your research question(s) and hypotheses, define your analysis plan, and provide you with a rough roadmap to your final research publication.\nIdeally you will want to create a separate Git branch to create your protocol so that you can create a pull request where others can more easily review and approve it. After you’ve finished writing a protocol and made a pull request, notify someone (who will be coauthor on the project) to review and approve it.\nOnce the protocol has been reviewed and approved, someone on the management group will publish it on Zenodo for you to obtain a Digital Object Identifier (DOI). This provides a clear record connecting the hypotheses and anticipated analytic approaches with the final analysis of the data.\nAny changes to the protocol as the project continues should be updated on Zenodo. If there are any changes, make sure to notify someone on the management group to update the Zenodo deposit and create a new record.\n\n\n\n\n\n\ngraph TB\n  branch(\"Create branch&lt;br&gt;to write protocol\"):::yours\n  write(\"Protocol writing in&lt;br&gt;'docs/protocol/protocol.qmd'\"):::yours\n  pr(\"Create pull request&lt;br&gt;when protocol is&lt;br&gt;ready\"):::yours\n  review[\"Protocol review&lt;br&gt;and approval\"]:::ours\n  zenodo[\"Protocol uploaded&lt;br&gt;to Zenodo\"]:::ours\n  branch --&gt; write --&gt; pr --&gt; review --&gt; zenodo\n\n  classDef ours fill:#ADD8E6;\n  classDef yours fill:#FFA07A;\n\n\n\n\nFigure 8.1: Protocol development steps to follow for a research project. The rounded boxes in orange are tasks you are responsible for doing. The rectangular ones in light blue are for coauthors or the management to do.\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nIf you desire (though it is not required), you could publish a stable version of the protocol as a preprint on online preprint servers such as arXiv or medRxiv. Keep in that you would be responsible for uploading it and keeping it updated. Because publishing to Zenodo is done semi-automatically by someone in the management group, you don’t need to do the upload yourself for Zenodo.",
+    "crumbs": [
+      "Lifecycle",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Protocol</span>"
+    ]
+  },
+  {
+    "objectID": "docs/protocol/index.html#acknowledgement-statement",
+    "href": "docs/protocol/index.html#acknowledgement-statement",
+    "title": "8  Protocol",
+    "section": "8.3 Acknowledgement Statement",
+    "text": "8.3 Acknowledgement Statement\nAny publication, dissemination, or communication that comes from or is related to DP-Next should mention the following acknowledgement statements.\nFor all publications:\n\nThe DP-Next project was funded by a Steno National Collaborative Grant from the Novo Nordisk Foundation (Grant number NNF24OC008916). Additional funding was obtained from all Steno Diabetes Centers.\n\nAdditionally for publications involving data collected through OPEN, which is used for collecting survey data from e.g. the electronic questionnaires used in Work Package 3 (questionnaire study and the clinical study):\n\nElectronic questionnaires were distributed using the Open Patient data Explorative Network (OPEN) from Odense University Hospital, Region of Southern Denmark (open.rsyd.dk).",
+    "crumbs": [
+      "Lifecycle",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Protocol</span>"
+    ]
+  },
+  {
     "objectID": "docs/publishing/authorship.html",
     "href": "docs/publishing/authorship.html",
-    "title": "8  Authorship",
+    "title": "9  Authorship",
     "section": "",
     "text": "Authorship publications should reflect a substantial, direct contribution to the work presented in each paper. We aim to use the Vancouver Guidelines as a base and expand on them to reflect nontraditional research contributions. Nontraditional research contributions are activities that contribute in a direct way to the creation of the publication, such as improving data quality, developing software, or improving analysis code.\nWhen you create the project proposal (as in Chapter 6), you should have an approximate idea of who the authors are and their order in the list. As the project continues, though, this could naturally change. Anyone who has contributed meaningfully or substantially to research project should be given the chance to become coauthor.\nAll potential coauthors should be involved early in the research project, ideally at the project proposal stage. In addition to the named authors, all papers need to include the group authorship of ‘on behalf of the DP-Next investigators’, linking to the current list of DP-Next investigators\nKeep in mind that author lists and orders aren’t fixed at the start and can be amended after project approval by consensus among the authors or by the Steering Committee if the factual contributions differ from those foreseen initially. Ultimately, the Steering Committee has the final authority to decide on and determine the author list of any given paper. If disagreements about authorship cannot be resolved by consensus within the author group, the Steering Committee will make the final decision.\nRegardless of named authors, you should make sure to include a detailed contributors list along with their described contributions as per the CRediT roles. At the least, the contributors and CRediT roles should be kept updated in the dp-next.yaml file and ideally be mentioned somewhere in the paper or in the supplemental material. The Steering Committee will ensure that such a document is publicly accessible and up to date.\nMake sure to also include an acknowledgement to external parties such as funders, institutions, participants, and service providers in papers and other material you present or disseminate elsewhere. The Steering Committee will maintain an updated acknowledgement statement for the DP-Next project in the template-project.",
     "crumbs": [
       "Lifecycle",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Authorship</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Authorship</span>"
     ]
   },
   {
@@ -240,7 +273,7 @@
     "href": "CHANGELOG.html",
     "title": "Changelog",
     "section": "",
-    "text": "0.3.0 - 2026-09-19\nSince we follow Conventional Commits, we’re able to automatically create formal “releases” of the website based on our commit messages. Releases in the context of websites are simply snapshots in time of the website content. We use Cocogitto to be able to automatically create these releases, which uses SemVar as the version numbering scheme, and git-cliff to generate the changelog based on the commit messages.\nBecause releases are created based on commit messages, a new release is created quite often—sometimes several times in a day. This also means that any individual release will not have many changes within it. Below is a list of the releases we’ve made so far, along with what was changed within each release.\nCommits from bots, like dependabot or pre-commit-ci, are not included in the changelog.",
+    "text": "0.5.0 - 2026-09-19\nSince we follow Conventional Commits, we’re able to automatically create formal “releases” of the website based on our commit messages. Releases in the context of websites are simply snapshots in time of the website content. We use Cocogitto to be able to automatically create these releases, which uses SemVar as the version numbering scheme, and git-cliff to generate the changelog based on the commit messages.\nBecause releases are created based on commit messages, a new release is created quite often—sometimes several times in a day. This also means that any individual release will not have many changes within it. Below is a list of the releases we’ve made so far, along with what was changed within each release.\nCommits from bots, like dependabot or pre-commit-ci, are not included in the changelog.",
     "crumbs": [
       "Appendices",
       "Changelog"
@@ -251,7 +284,7 @@
     "href": "CHANGELOG.html#section",
     "title": "Changelog",
     "section": "",
-    "text": "✨ Features\n\nMove meetings chapter over from wp1-ros #12 by @lwjohnst86 (a9b3827)\n\n\n\n👷 CI/CD\n\nComment out broken Quarto render check (for now) #5 by @lwjohnst86 (a1ad7d0)\n\n\n\n❤️ New contributors\n\n@pre-commit-ci[bot] started making automated contributions\n@dependabot[bot] started making automated contributions",
+    "text": "✨ Features\n\nAdd protocol writing section #16 by @lwjohnst86 (0da6734)",
     "crumbs": [
       "Appendices",
       "Changelog"
@@ -261,8 +294,8 @@
     "objectID": "CHANGELOG.html#section-1",
     "href": "CHANGELOG.html#section-1",
     "title": "Changelog",
-    "section": "0.2.0 - 2026-08-30",
-    "text": "0.2.0 - 2026-08-30\n\n✨ Features\n\nMove authorships section over from wp1-ros #4 by @lwjohnst86 (ce029c1)\n\n\n\n💄 Styling\n\nDon’t number appendices #1 by @lwjohnst86 (e876d30)",
+    "section": "0.4.0 - 2026-09-19",
+    "text": "0.4.0 - 2026-09-19\n\n✨ Features\n\nMove over project management doc #14 by @lwjohnst86 (31cd09e)",
     "crumbs": [
       "Appendices",
       "Changelog"
@@ -272,8 +305,8 @@
     "objectID": "CHANGELOG.html#section-2",
     "href": "CHANGELOG.html#section-2",
     "title": "Changelog",
-    "section": "0.1.1 - 2026-08-30",
-    "text": "0.1.1 - 2026-08-30\n\n🐛 Fixes\n\nRemove . before filename in code chunks by @lwjohnst86 (116392c)\n\n\n\n👷 CI/CD\n\nFix malformed workflow by @lwjohnst86 (278fce3)",
+    "section": "0.3.0 - 2026-09-19",
+    "text": "0.3.0 - 2026-09-19\n\n✨ Features\n\nMove meetings chapter over from wp1-ros #12 by @lwjohnst86 (a9b3827)\n\n\n\n👷 CI/CD\n\nComment out broken Quarto render check (for now) #5 by @lwjohnst86 (a1ad7d0)\n\n\n\n❤️ New contributors\n\n@pre-commit-ci[bot] started making automated contributions\n@dependabot[bot] started making automated contributions",
     "crumbs": [
       "Appendices",
       "Changelog"
@@ -282,6 +315,28 @@
   {
     "objectID": "CHANGELOG.html#section-3",
     "href": "CHANGELOG.html#section-3",
+    "title": "Changelog",
+    "section": "0.2.0 - 2026-08-30",
+    "text": "0.2.0 - 2026-08-30\n\n✨ Features\n\nMove authorships section over from wp1-ros #4 by @lwjohnst86 (ce029c1)\n\n\n\n💄 Styling\n\nDon’t number appendices #1 by @lwjohnst86 (e876d30)",
+    "crumbs": [
+      "Appendices",
+      "Changelog"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-4",
+    "href": "CHANGELOG.html#section-4",
+    "title": "Changelog",
+    "section": "0.1.1 - 2026-08-30",
+    "text": "0.1.1 - 2026-08-30\n\n🐛 Fixes\n\nRemove . before filename in code chunks by @lwjohnst86 (116392c)\n\n\n\n👷 CI/CD\n\nFix malformed workflow by @lwjohnst86 (278fce3)",
+    "crumbs": [
+      "Appendices",
+      "Changelog"
+    ]
+  },
+  {
+    "objectID": "CHANGELOG.html#section-5",
+    "href": "CHANGELOG.html#section-5",
     "title": "Changelog",
     "section": "0.1.0 - 2026-08-30",
     "text": "0.1.0 - 2026-08-30\n\n✨ Features\n\nAdd initial Quarto config file and index files by @lwjohnst86 (1b3dcea)\nMove over section on starting a project by @lwjohnst86 (e7c19e6)\nMove “roles” chapter into this guide by @lwjohnst86 (29b4021)\nMove and update the DST setup guide by @lwjohnst86 (d5e8640)\n\n\n\n🐛 Fixes\n\nAdd link to Turing Way website by @lwjohnst86 (a5f2e85)\n\n\n\n♻️ Refactor\n\nRename to overview from general by @lwjohnst86 (1a71f31)\n\n\n\n📝 Documentation\n\nMinor edits to community health files by @lwjohnst86 (41f4afd)\n\n\n\n💄 Styling\n\nAdd DP-Next Quarto theme by @lwjohnst86 (fb45ae0)\n\n\n\n👩‍💻 Miscellaneous\n\nStart of guide repo by @lwjohnst86 (8feebcc)\nSwitch to use dp-next-theme in justfile by @lwjohnst86 (06fce32)\nUpdate and run pre-commit hooks by @lwjohnst86 (f937cf2)\nExclude _book/ and _extensions/ from TODO listing by @lwjohnst86 (ae8107a)\nIgnore Quarto *_files/ by @lwjohnst86 (102e2ed)\n\n\n\n❤️ New contributors\n\n@github-actions[bot] started making automated contributions\n@lwjohnst86 made their first contribution",
