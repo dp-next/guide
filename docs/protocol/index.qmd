@@ -15,7 +15,11 @@ process much easier and sometimes can be set up to be done automatically.
 
 These work package protocols are (generally) kept in stand-alone repositories,
 so that they can be directly built into a website and automatically uploaded to
-Zenodo whenever changes are made.
+Zenodo whenever changes are made. Generally, it's best to have someone from the
+management group create the repository for the protocol, as its better to set it
+up using the [Template Website](https://template-website.seedcase-project.org)
+from [Seedcase](https://seedcase-project.org) that requires some admin settings
+after creating the repository.
 
 These protocols are bigger and broader in scope, as they represent the overall
 activity within a work package. They also will have more people working on them,
@@ -25,7 +29,8 @@ branch (and built onto the website) will already have been approved and is
 "publishable" in the current state.
 
 Sections within work package protocols may be more diverse compared to protocols
-for research projects, which have a template to follow.
+for research projects, which have a template protocol file included with
+instructions and suggestions.
 
 ## Research project protocols
 
@@ -76,7 +81,8 @@ graph TB
   pr("Create pull request<br>when protocol is<br>ready"):::yours
   review["Protocol review<br>and approval"]:::ours
   zenodo["Protocol uploaded<br>to Zenodo"]:::ours
-  branch --> write --> pr --> review --> zenodo
+  update["Update metadata<br>in 'dp-next.yml'"]:::ours
+  branch --> write --> pr --> review --> zenodo --> update
 
   classDef ours fill:#ADD8E6;
   classDef yours fill:#FFA07A;
