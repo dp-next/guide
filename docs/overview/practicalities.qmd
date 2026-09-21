@@ -1,0 +1,102 @@
+# Practicalities {#sec-practicalities}
+
+This section contains some higher-level, practical things that relate to many
+aspects of working in DP-Next.
+
+## Work as openly as possible
+
+As much as possible, work on public GitHub repositories and upload your work as
+openly as possible. There are few things that truly must be private, but for
+those that are, use private GitHub repositories.
+
+## Do all work on GitHub and/or Git, including managing projects
+
+All work (that can legally be) needs to be done on our DP-Next GitHub
+organization. This provides a central place that we can do work on together,
+makes it easier to keep work visible to others in the group, and makes it easier
+to resolve issues and help each other out. It also makes it easier to do work
+more openly.
+
+Use GitHub Project boards to follow a
+[Kanban](https://en.wikipedia.org/wiki/Kanban_board)-style approach to project
+management. Use GitHub issues to track tasks, write comments and have
+discussions in issues. That ensures any relevant discussions or conversations
+happen within the same space as the project, so it's easier to find later.
+
+Create pull requests when making changes to files when you want a review of
+those changes. Add review comments directly in the pull request, so that the
+comments are directly connected to the changes being made and can be more easily
+resolved in the same space.
+
+## Write documents with Quarto Markdown
+
+[Markdown](https://quarto.org/docs/authoring/markdown-basics.html) is a way of
+writing plain-text that is open, easy to work with for all operating systems
+(e.g. Mac, Windows, Linux). It uses simple syntax to bold words (e.g.
+`**bold**`) or make headers (e.g. `# Header`). We write all documents in
+Markdown, specifically [Quarto](https://quarto.org) Markdown. Quarto is very
+powerful, as you can mix R code and text in Quarto, making it easier to create
+reproducible analyses and papers. You can also easily create websites, PDFs, and
+other output from it. Quarto (or Markdown) files have the `.qmd` (Quarto
+Markdown) or `.md` (Markdown) file extension.
+
+## Process and analyze data with R or Python
+
+R or Python are open source languages that are commonly used in research and
+science. Read our [decision
+post](https://dp-next.github.io/wp1-ros/decisions/why-r-python.html) on why we
+use R or Python. It's also easy to use R or Python in Quarto to write
+reproducible scientific outputs like papers. That means you can use R or Python
+code to generate your figures and tables for you and automatically add them to
+your paper or document.
+
+## Name files following our style convention
+
+How files and folders are named is one of the most effective ways of improving
+collaboration and making it easier to work on and maintain a project. As much as
+possible, name files using `kebab-case` (lowercase and with `-` for spaces). For
+example, `paper.qmd` or `protocol.qmd`. Some files are capitalized by
+convention, e.g. `README.md`.
+
+Why not use spaces in filenames? Spaces can make things difficult to work with
+for some systems and programs. For instance, if we want to generate our files
+into a website, including spaces in the names can make it difficult to generate
+the URLs for the pages.
+
+Name files simply and as short as is reasonable, using as fewer words as is
+appropriate or even better, use single words. Prefer nouns rather than verbs.
+Avoid special characters, including Danish characters like `æ`, `ø`, and `å` as
+these can cause some problems on some systems. Also avoid repeating the same
+word in the filename that would also in the filepath. For example, instead of
+`contributing/contributing-next-steps.qmd` use `contributing/next-steps.qmd` or
+instead of `project-name/docs/dp-next-project-name-paper.qmd` use
+`project-name/docs/paper.qmd`. The filepath describes the contents of the file,
+not just the filename itself.
+
+## Communicate with others using Discord
+
+We use Discord for general communication and coordination in DP-Next. Why
+Discord? Check out Seedcase's [decision
+post](https://decisions.seedcase-project.org/why-discord/index.html) for details
+on why. In general, we use Discord for more informal communication, including
+for video meetings. For project-specific communications, it's best to create an
+issue or comment in an existing issue in the relevant project.
+
+## Keep your `dp-next.yaml` file up-to-date
+
+Throughout the project life cycle (also after the manuscript / conference
+abstract is submitted), you need to keep the status of the project updated in
+the `dp-next.yaml` file. We use this file to manage projects, keep an overview
+of activities in DP-Next, and to make it easier to display that information on
+the main website.
+
+## Publish nontraditional components of research (in Zenodo)
+
+Part of the aim of DP-Next is to publish nontraditional research outputs, not
+just papers in journals. For example, we publish protocols, analysis code in
+GitHub repositories, and preprints. We publish these outputs on Zenodo, mainly
+because it has a great programmatic access to uploading outputs there, it's
+based in EU, and is nonprofit. Seedcase also has the
+[zen-do](https://zen-do.seedcase-project.org) package that makes it much easier
+to automate publishing to Zenodo. Using Zenodo means we get a Digital Object
+Identifier (DOI) and allows us and others to cite these works.

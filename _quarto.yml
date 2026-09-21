@@ -22,6 +22,7 @@ book:
     - part: "Overview"
       chapters:
       - docs/overview/index.qmd
+      - docs/overview/practicalities.qmd
       - docs/overview/roles.qmd
       - docs/overview/project-management.qmd
       - docs/overview/meetings.qmd
