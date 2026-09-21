@@ -1,0 +1,120 @@
+# Publishing {#sec-publishing}
+
+As detailed in the original project description to the Novo Nordisk Foundation
+(<https://dp-next.github.io/>) and Section 12 of the collaboration agreement, we
+aim to work, collaborate, and publish following the principles of open and
+reproducible science.
+
+Briefly, the collaboration agreement states that the [Steering
+Committee](https://dp-next.github.io/who-we-are.html) is responsible for
+outlining and implementing the project's publication strategy. The main aims of
+this strategy are:
+
+- To jointly publish positive, negative, and inconclusive results in
+  international peer-reviewed scientific journals.
+- To work according to open and reproducible research practices.
+
+::: callout-note
+In case of any fundamental discrepancy or conflict between this page and the
+collaboration agreement, the text of the collaboration agreement has precedence.
+If any substantial deviations from this guide are needed for a particular
+research project, the authors should justify the deviations and request approval
+to proceed from the Steering Committee.
+:::
+
+So, how do we put this strategy into practice? When a scientific output is ready
+to be disseminated, either "informally" (in archives like Zenodo) or "formally"
+in journals or other channels, in DP-Next we follow a specific path. See
+@fig-publication-steps below for the basics of this path, with later sections
+describing things in more detail.
+
+```{mermaid}
+%%| label: fig-publication-steps
+%%| fig-cap: >-
+%%|   Steps to follow for publishing scientific output during the life cycle of
+%%|   a DP-Next project. The rounded boxes in orange are tasks you are
+%%|   responsible for doing. The rectangular ones in light blue are for the
+%%|   committee members to do.
+%%| fig-alt: >-
+%%|   Boxes and arrows indicating the flow of tasks from preparation to
+%%|   publication. The boxes are colored according to whether they are the
+%%|   responsibility of the authors or the committee members. These tasks are
+%%|   visual representations of the text below.
+
+graph LR
+    subgraph S1["Output ready"]
+      direction TB
+      ready("Finished output<br>ready for review"):::yours
+      inform_draft("Inform coauthors"):::yours
+      ready --> inform_draft
+    end
+
+    subgraph S2["Review and archive"]
+      review["Review output"]:::ours
+      respond("Respond and<br>revise (if needed)"):::yours
+      approve["Output approved"]:::ours
+      zenodo["Upload output<br>to Zenodo<br>(e.g. preprint)"]:::ours
+      github["GitHub repository<br>to Zenodo"]:::ours
+      review --> respond --> review
+      respond --> approve --> zenodo --> github
+    end
+
+    subgraph S3["Formally publish"]
+      journal("Submit output<br>to journal"):::yours
+      track("Track review status,<br>updates and acceptance"):::yours
+      inform_end("Update everyone<br>via Discord"):::yours
+      update_metadata("Update metadata<br>in 'dp-next.yaml'"):::yours
+      journal --> track --> inform_end --> update_metadata
+    end
+
+    S1 -.-> S2 -.-> S3
+
+    style S1 fill:#FFFFFF, color:#000000
+    style S2 fill:#FFFFFF, color:#000000
+    style S3 fill:#FFFFFF, color:#000000
+    classDef ours fill:#ADD8E6;
+    classDef yours fill:#FFA07A;
+```
+
+## When new results are ready to be published
+
+'New results' means any results that have not yet been formally published in a
+peer-reviewed journal. Results included in a conference abstract/presentation,
+preprint, or GitHub repository are still considered new results until they are
+formally published. When disseminating new results, follow these tasks:
+
+- Including preliminary or new results in lectures or seminars that is outside
+  of DP-Next should be done with care. Researchers wishing to present new
+  results in small academic circles should notify the Steering Committee before
+  giving the presentation, by raising an issue in the research project's GitHub
+  (or in the WP1-Management repository).
+
+- You can only disseminating new results through media or outreach activities
+  after disseminating the results in the form of a published conference abstract
+  or presentation. In the case of a press release related to the conference, you
+  can prepare the dissemination beforehand under a time embargo that coincides
+  with the academic presentation of results.
+
+- Before issuing any press release or disseminating any new results from
+  DP-Next, researchers should inform the Steering Committee via an issue on the
+  (private) WP1-Management repo. You should do this as early as possible. If
+  approval is needed in less than 72 hours, send an e-mail to or call one of the
+  members of Steering Committee.
+
+- After the dissemination activity is done, you should send a copy or link to
+  the final materials to the Steering Committee and report/log the activity on
+  the project's GitHub.
+
+## General disseminating activities
+
+If you want to disseminate something that is generally about DP-Next or on
+already published results (i.e. not including preliminary results, preprints,
+conference abstracts or GitHub content), you don't need approval from the
+Steering Committee. But it is still appreciated if you keep us informed, via the
+Discord channel or making an issue on WP1-Management with details about the
+dissemination activity.
+
+These other forms of dissemination include: keynotes, invited talks, press
+releases, media appearances, podcasts, posts on social media, or outreach
+activities. In general, dissemination activities must never interfere with or
+weaken the opportunities for academic publication of the study results.
