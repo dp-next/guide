@@ -14,6 +14,16 @@ this strategy are:
   international peer-reviewed scientific journals.
 - To work according to open and reproducible research practices.
 
+To achieve the "open" part of the aim, we'll publish scientific output in
+journals as Open Access publications, with a strong preference for:
+
+- The Green Open Access format (meaning to publish as a pre-print in an open
+  archive such as [Zenodo](https://zenodo.org) or bioRxiv).
+- Publication agreements that do not require the transfer of copyright to
+  publishers.
+- Publishing under a [Creative Commons Attribution
+  (CC-BY)](https://creativecommons.org/licenses/by/4.0/) license.
+
 ::: callout-note
 In case of any fundamental discrepancy or conflict between this page and the
 collaboration agreement, the text of the collaboration agreement has precedence.
@@ -23,16 +33,31 @@ to proceed from the Steering Committee.
 :::
 
 So, how do we put this strategy into practice? When a scientific output is ready
-to be disseminated, either "informally" (in archives like Zenodo) or "formally"
-in journals or other channels, in DP-Next we follow a specific path. See
-@fig-publication-steps below for the basics of this path, with later sections
-describing things in more detail.
+to be disseminated, either "informally" (in archives like Zenodo or at
+conferences) or "formally" in journals, in DP-Next we follow a specific path for
+formal or informal publishing.
+
+## Formally disseminate
+
+This section is only relevant for 'new results', which means any results that
+have not yet been formally published in a peer-reviewed journal. Results
+included in a conference abstract or presentation are still considered new
+results until they are formally published.
+
+When your research project has been reviewed by coauthors, is ready to be
+submitted to be formally published in an academic journal, you need to inform
+the management group that your project is ready.
+
+You can do that either by creating an issue on the WP1-Management repo or by
+sending a message in the "General" Discord channel by pinging the management
+group with "\@admin". An overview of this process is shown below in
+@fig-publication-steps.
 
 ```{mermaid}
 %%| label: fig-publication-steps
 %%| fig-cap: >-
-%%|   Steps to follow for publishing scientific output during the life cycle of
-%%|   a DP-Next project. The rounded boxes in orange are tasks you are
+%%|   Steps to follow for formally publishing scientific output during the life
+%%|   cycle of a DP-Next project. The rounded boxes in orange are tasks you are
 %%|   responsible for doing. The rectangular ones in light blue are for the
 %%|   committee members to do.
 %%| fig-alt: >-
@@ -45,8 +70,9 @@ graph LR
     subgraph S1["Output ready"]
       direction TB
       ready("Finished output<br>ready for review"):::yours
-      inform_draft("Inform coauthors"):::yours
-      ready --> inform_draft
+      inform_coauthors("Inform coauthors"):::yours
+      inform_management("Inform management"):::yours
+      ready --> inform_coauthors --> inform_management
     end
 
     subgraph S2["Review and archive"]
@@ -76,45 +102,60 @@ graph LR
     classDef yours fill:#FFA07A;
 ```
 
-## When new results are ready to be published
+You should inform us (the management group) at least two weeks before the
+intended submission date or deadline. We'll inform you on whether we agree or
+disagree with the publication as soon as possible and within the two weeks. No
+response from us can be regarded as agreement and you can continue with the
+submission.
 
-'New results' means any results that have not yet been formally published in a
-peer-reviewed journal. Results included in a conference abstract/presentation,
-preprint, or GitHub repository are still considered new results until they are
-formally published. When disseminating new results, follow these tasks:
+We'll notify the full Steering Committee, who may assign some of its members to
+review and approve on the committee's behalf. The Steering Committee will only
+disagree with the submission of a paper or abstract at this stage if it seems to
+be premature or is repetition of previous work. Disagreement can also happen if
+you haven't followed most of the process described in this guide, e.g. no GitHub
+repository, no approved synopsis, no protocol.
 
-- Including preliminary or new results in lectures or seminars that is outside
-  of DP-Next should be done with care. Researchers wishing to present new
-  results in small academic circles should notify the Steering Committee before
-  giving the presentation, by raising an issue in the research project's GitHub
-  (or in the WP1-Management repository).
+When someone starts reviewing your project, you should respond as quickly as
+possible to any review comments and to make updates to the project and paper as
+quickly as possible. After we've given approval, we'll archive the paper as a
+pre-print to Zenodo and upload the GitHub repository to Zenodo to archive the
+analysis code.
 
-- You can only disseminating new results through media or outreach activities
-  after disseminating the results in the form of a published conference abstract
-  or presentation. In the case of a press release related to the conference, you
-  can prepare the dissemination beforehand under a time embargo that coincides
-  with the academic presentation of results.
+Once those tasks have been done, you can submit your paper to the journal. It's
+now your responsibility to track the submission progress, respond to review
+comments (including making changes to the paper in the GitHub repository), and
+keep us updated on the status. Once the paper is published, you also need to
+update the `dp-next.yaml` file in your repository.
 
-- Before issuing any press release or disseminating any new results from
-  DP-Next, researchers should inform the Steering Committee via an issue on the
-  (private) WP1-Management repo. You should do this as early as possible. If
-  approval is needed in less than 72 hours, send an e-mail to or call one of the
-  members of Steering Committee.
-
-- After the dissemination activity is done, you should send a copy or link to
-  the final materials to the Steering Committee and report/log the activity on
-  the project's GitHub.
-
-## General disseminating activities
+## Informally disseminate
 
 If you want to disseminate something that is generally about DP-Next or on
-already published results (i.e. not including preliminary results, preprints,
-conference abstracts or GitHub content), you don't need approval from the
-Steering Committee. But it is still appreciated if you keep us informed, via the
-Discord channel or making an issue on WP1-Management with details about the
+formally published results, you don't need approval from the Steering Committee.
+However, we would still appreciate it if you kept us informed, via the Discord
+channel or by making an issue on WP1-Management with details about the
 dissemination activity.
 
-These other forms of dissemination include: keynotes, invited talks, press
-releases, media appearances, podcasts, posts on social media, or outreach
-activities. In general, dissemination activities must never interfere with or
-weaken the opportunities for academic publication of the study results.
+Informal dissemination could include: keynotes, invited talks, press releases,
+media appearances, podcasts, posts on social media, or outreach activities. In
+general, these activities must not interfere with or weaken the opportunities
+for formal academic publication of the study results.
+
+As your project progresses, you'll likely produce various interim results and
+materials. As far as possible, these should be kept in the project's GitHub
+repository.
+
+If you want to include preliminary or new results in lectures or seminars that
+are outside of DP-Next, do so with great care. If you want to present new
+results in small academic circles, please notify the management group before
+giving the presentation by creating an issue in the research project's GitHub
+(or in the WP1-Management repository).
+
+You should ideally only disseminate new results through broader media or
+outreach activities *after* disseminating the results in as a conference
+abstract or presentation. In the case of a press release related to the
+conference, you can prepare the dissemination beforehand under a time embargo
+that coincides with the academic presentation of results. Before issuing any
+press release, you should inform the management group via an issue on the
+(private) WP1-Management repo. You should do this as early as possible. If you
+need approval in less than 72 hours, send an e-mail to or call one of the
+members of Steering Committee.
