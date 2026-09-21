@@ -23,6 +23,31 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.6.0](https://github.com/dp-next/guide/compare/0.5.0..0.6.0) - 2026-09-21
+
+### ✨ Features
+
+- Move publishing content from other repo
+  [#18](https://github.com/dp-next/guide/pull/18) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([39a1a9a](https://github.com/dp-next/guide/commit/39a1a9a25da7ef49e1f2fa648b7ee03e8ccb4ce8))
+- Add a practicalities section [#20](https://github.com/dp-next/guide/pull/20)
+  by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([2d1b93d](https://github.com/dp-next/guide/commit/2d1b93d3bfc1190fee2cb4e7007c0d78efc2a9c1))
+
+### ♻️ Refactor
+
+- Clarify that WP protocol is made with template-website
+  [#21](https://github.com/dp-next/guide/pull/21) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([090d07f](https://github.com/dp-next/guide/commit/090d07fa09662da86d0ee8e255f5b98bf3ba291b))
+
+### 💄 Styling
+
+- Update Quarto theme [#19](https://github.com/dp-next/guide/pull/19) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([ef62456](https://github.com/dp-next/guide/commit/ef624561d6dfa21fc95f3d39ebf6ea5038f5bcca))
+
 ## [0.5.0](https://github.com/dp-next/guide/compare/0.4.0..0.5.0) - 2026-09-19
 
 ### ✨ Features
