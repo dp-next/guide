@@ -41,6 +41,7 @@ typography:
 defaults:
   bootstrap:
     defaults:
+      navbar-bg: "#fff"
       mermaid-edge-color: "#8B8B8B"
     rules: |
       .cell-output pre code {
