@@ -41,6 +41,7 @@ typography:
 defaults:
   bootstrap:
     defaults:
+      code-color: "#000"
       mermaid-edge-color: "#8B8B8B"
     rules: |
       .cell-output pre code {
