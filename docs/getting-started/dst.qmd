@@ -26,6 +26,16 @@ git config --global init.defaultBranch main
 
 Replacing the `YOUR NAME` and `name@email.com` with your actual details.
 
+To check whether it worked, you can run this command:
+
+```bash {filename="Terminal"}
+git config list --global
+# Or if that doesn't work
+git config --list
+```
+
+In the output, you should see the configurations you've set.
+
 ## The folder structure
 
 <!-- TODO: Link to design for "our design" -->
