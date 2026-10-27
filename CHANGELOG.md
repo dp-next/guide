@@ -23,6 +23,20 @@ releases we've made so far, along with what was changed within each release.
 Commits from bots, like `dependabot` or `pre-commit-ci`, are not included in the
 changelog.
 
+## [0.6.1](https://github.com/dp-next/guide/compare/0.6.0..0.6.1) - 2026-10-27
+
+### ♻️ Refactor
+
+- Add code to check Git config [#35](https://github.com/dp-next/guide/pull/35)
+  by [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([05c432e](https://github.com/dp-next/guide/commit/05c432ef630b6200f157fa6d44a108945722207e))
+
+### 💄 Styling
+
+- Update DP-Next Quarto theme [#25](https://github.com/dp-next/guide/pull/25) by
+  [`@lwjohnst86`](https://github.com/lwjohnst86)
+  ([ec48676](https://github.com/dp-next/guide/commit/ec486763acfb96ee8545feef12a320529e88a8ed))
+
 ## [0.6.0](https://github.com/dp-next/guide/compare/0.5.0..0.6.0) - 2026-09-21
 
 ### ✨ Features
